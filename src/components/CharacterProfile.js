@@ -16,9 +16,10 @@ function CharacterProfile({character, updateChar}) {
     const handleSubmit = (term) => {
       if (stats.filter(newChar => newChar.name == term)[0]) {
         let newCharacter = stats.filter(newChar => newChar.name == term)[0]
+        console.log(newCharacter)
         updateChar(newCharacter)
-        heroicKarma();
-        setKarma(baseKarma);
+        heroicKarma(newCharacter);
+        setKarma(baseKarma)  
       }
     };
 
@@ -30,22 +31,24 @@ function CharacterProfile({character, updateChar}) {
 
     let baseKarma = 0;
     let tagValues = {
-      "Heroic": () => { baseKarma = character.rank; }
+      "Heroic": (char) => { baseKarma = char.rank; }
     }
 
-    function heroicKarma() {
-      character.tags.forEach((tag) => {
+    function heroicKarma(newcharacter) {
+      baseKarma = 0;
+      newcharacter.tags.forEach((tag) => {
         if (tag in tagValues) {
           let func = tagValues[tag];
-          func();
-        }
+          func(newcharacter);
+        } 
       });
+      
     }
     
     const [karma, setKarma] = useState(baseKarma);
 
     const handleClickKarmaMinus = () => {
-      setKarma(karma - 1);
+      if (karma > 0) setKarma(karma - 1);
     };
     const handleClickKarmaPlus = () => {
       setKarma(karma + 1);
@@ -56,7 +59,7 @@ function CharacterProfile({character, updateChar}) {
     }
 
 
-    heroicKarma();
+    heroicKarma(character);
     return (
       <section className='hero is-danger'>
         <div className='hero-body'>

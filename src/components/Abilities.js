@@ -112,8 +112,8 @@ function Abilities({character}) {
         <p>Agility Defense: {aDefense}</p>
         <p>Agility Non-Combat: {aNonCombat} {agilityEdge}</p>
         <h2>Resilience: {resilience} {resilienceEdge}</h2>
-        <p>Resiliance Defense: {rDefense}</p>
-        <p>Resiliance Non-Combat: {rNonCombat} {resilienceEdge}</p>
+        <p>Resilience Defense: {rDefense}</p>
+        <p>Resilience Non-Combat: {rNonCombat} {resilienceEdge}</p>
         <h2>Vigilance: {vigilance} {vigilanceEdge}</h2>
         <p>Vigilance Defense: {vDefense}</p>
         <p>Vigilance Non-Combat: {vNonCombat} {vigilanceEdge}</p>

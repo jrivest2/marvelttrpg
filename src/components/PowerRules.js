@@ -13,6 +13,9 @@ function PowerRules({character}) {
         }
         return <PowerRuleShow power={power} key={index} />
     })
+
+    // Possibly a different way to calclute searchPowers
+    // searchPowers = powers.filter(power => power[searchStat] == searchTerm)
     
 
     console.log(powers.length)

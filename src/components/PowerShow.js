@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import PowerRuleShow from './PowerRuleShow';
 
 function PowerShow({power}) {
     
@@ -22,7 +23,20 @@ function PowerShow({power}) {
     return <div onClick={handleClick}>{power}</div>
 
     // Use the below return instead when powersFile/powerRules.JSON is complete
-    // return <div>{power.name}</div>
+
+    if (isClicked) {
+        return (
+            <div>
+                <div onClick={handleClick}>{power}</div>
+                <hr></hr>
+                <PowerRuleShow power={power} />
+                <hr></hr>
+            </div>
+        )
+    }
+
+
+    return <div>{power.name}</div>
 
 };
 
