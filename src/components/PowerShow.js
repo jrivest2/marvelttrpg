@@ -22,7 +22,7 @@ function PowerShow({power}) {
     // }
     // return <div onClick={handleClick}>{power}</div>
 
-    // Use the below return instead when powersFile/powerRules.JSON is complete
+    // Use the below code instead when powersFile/powerRules.JSON is complete
 
     if (isClicked) {
         return (
