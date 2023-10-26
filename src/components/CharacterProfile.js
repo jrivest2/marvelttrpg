@@ -16,7 +16,6 @@ function CharacterProfile({character, updateChar}) {
     const handleSubmit = (term) => {
       if (stats.filter(newChar => newChar.name == term)[0]) {
         let newCharacter = stats.filter(newChar => newChar.name == term)[0]
-        console.log(newCharacter)
         updateChar(newCharacter)
         heroicKarma(newCharacter);
         setKarma(baseKarma)  

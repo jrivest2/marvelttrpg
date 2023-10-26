@@ -5,6 +5,7 @@ function Speed({character}) {
     let runSpeed = null;
     let climbSpeed = null;
     let jumpSpeed = null;
+    let nonCombatJumpSpeed = null;
     let swimSpeed = null;
     let flightSpeed = null;
     let nonCombatFlightSpeed = null;
@@ -16,6 +17,7 @@ function Speed({character}) {
         "Run": () => {runSpeed = baseSpeed + parseInt(character.agility / 5)},
         "Climb": () => {climbSpeed = parseInt(runSpeed / 2) + runSpeed % 2},
         "Jump": () => {jumpSpeed = parseInt(runSpeed / 2) + runSpeed % 2},
+        "Non-Combat Jump": () => {nonCombatJumpSpeed = 0},
         "Swim": () => {swimSpeed = parseInt(runSpeed / 2) + runSpeed % 2},
         "Flight": () => {flightSpeed = 0},
         "Non-Combat Flight": () => {nonCombatFlightSpeed = 0},
@@ -26,11 +28,11 @@ function Speed({character}) {
 
     const powerValues = {
         "Jump 1": () => {jumpSpeed = runSpeed},
-        "Jump 2": () => {jumpSpeed = character.rank * runSpeed},
-        "Jump 3": () => {jumpSpeed = character.rank * runSpeed},
+        "Jump 2": () => {jumpSpeed = character.rank * runSpeed; nonCombatJumpSpeed = 3 * jumpSpeed},
+        "Jump 3": () => {jumpSpeed = character.rank * runSpeed; nonCombatJumpSpeed = 50 * jumpSpeed},
         "Wallcrawling": () => {climbSpeed = runSpeed},
-        "Flight 1": () => { flightSpeed = character.rank * runSpeed; nonCombatFlightSpeed = 3 * flightSpeed; jumpSpeed = 0},
-        "Flight 2": () => { flightSpeed = character.rank * runSpeed; nonCombatFlightSpeed = 50 * flightSpeed; jumpSpeed = 0},
+        "Flight 1": () => { flightSpeed = character.rank * runSpeed; nonCombatFlightSpeed = 3 * flightSpeed; jumpSpeed = 0;nonCombatJumpSpeed = 0},
+        "Flight 2": () => { flightSpeed = character.rank * runSpeed; nonCombatFlightSpeed = 50 * flightSpeed; jumpSpeed = 0;nonCombatJumpSpeed = 0},
         "Webslinging": () => {swingSpeed = 3 * runSpeed},
         "Webgliding": () => {glideSpeed = 2 * runSpeed},
 
@@ -44,6 +46,7 @@ function Speed({character}) {
         "Run": () => {return runSpeed},
         "Climb": () => {return climbSpeed},
         "Jump": () => {return jumpSpeed},
+        "Non-Combat Jump": () => {return nonCombatJumpSpeed},
         "Swim": () => {return swimSpeed},
         "Flight": () => {return flightSpeed},
         "Non-Combat Flight": () => {return nonCombatFlightSpeed},

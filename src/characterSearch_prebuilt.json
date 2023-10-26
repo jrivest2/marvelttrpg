@@ -12,7 +12,7 @@
         "powers": {
                 "Basic": ["Additional Limb", "Brilliance 2", "Mighty 2"],
                 "Plasticity": ["Extended Reach 1"],
-                "Spider Powers": ["Spider-Dogde", "Wallcrawling"],
+                "Spider Powers": ["Spider-Dodge", "Wallcrawling"],
                 "Super Strength": ["Banging Heads", "Crushing Grip", "Clobber", "Jump 1", "Quick Toss"],
                 "Telepathy": ["Machine Telepathy"]
         },
@@ -48,7 +48,7 @@
         "image": "/img/spider-man-peter.png",
         "powers": {
                 "Basic": ["Brilliance 1", "Combat Trickery", "Evasion", "Inspiration", "Integrity", "Mighty 1", "Wisecracker"],
-                "Spider Powers": ["Jump 1", "Spider-Dogde", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"]
+                "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"]
         },
         "traits": ["Audience", "Combat Reflexes", "Connections: Sources", "Free Running", "Inventor", "Pundit", "Scientific Expertise", "Weird"],
         "tags": ["Heroic", "Obligation: Aunt May", "Poor", "Secret Identity"],
@@ -82,8 +82,8 @@
         "image": "/img/scarlet-witch.png",
         "powers": {
                 "Basic": ["Discipline 2", "Flight 2"],
-                "Magic Chaos": ["Hex Bolt", "Jinx", "Powerful Hex", "Probability-Manipulation Hex", "Protection Hex"],
-                "Magic Sorcery": ["Astral Form", "Bolts of Balthakk", "Crimson Bands of Cyttorak", "Dispel Spell", "Flames of the Faltine", "Images of Ikonn", "Mists of Morpheus", "Shield of the Seraphim (20 points to shatter)", "Summon Portal", "Winds of Watoomb"],
+                "Magic (Chaos)": ["Hex Bolt", "Jinx", "Powerful Hex", "Probability-Manipulation Hex", "Protection Hex"],
+                "Magic (Sorcery)": ["Astral Form", "Bolts of Balthakk", "Crimson Bands of Cyttorak", "Dispel Spell", "Flames of the Faltine", "Images of Ikonn", "Mists of Morpheus", "Shield of the Seraphim", "Summon Portal", "Winds of Watoomb"],
                 "Power Control": ["Boost Powers", "Dampen Power"]
         },
         "traits": ["Combat Expert", "Connections: Super Heroes", "Dealmaker", "Extraordinary Origin", "Fearless", "Font of Information", "Situational Awareness", "Weird"],
@@ -117,7 +117,7 @@
         "image": "/img/spider-man-miles.png",
         "powers": {
                 "Basic": ["Evasion", "Mighty 1"],
-                "Spider Powers": ["Jump 1", "Spider-Dogde", "Spider-Sense", "Spider-Strike", "Venom Blast", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"],
+                "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Venom Blast", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"],
                 "Illusion": ["Invisibility"]
         },
         "traits": ["Combat Reflexes", "Free Running", "Quick Learner", "Surprising Power", "Weird"],
