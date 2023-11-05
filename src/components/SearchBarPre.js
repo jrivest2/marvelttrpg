@@ -14,7 +14,7 @@ function SearchBarPre({ onSubmit }) {
 
     return ( 
     <div>
-        <form onSubmit={handleFormSubmit}>
+        <form  onSubmit={handleFormSubmit}>
         <p>Character Search: <input id="search-pre" value={term} onChange={handleChange} /></p>
         </form>
     </div>

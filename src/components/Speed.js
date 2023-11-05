@@ -12,8 +12,7 @@ function Speed({character}) {
     let swingSpeed = null;
     let glideSpeed = null;
     
-    /* Use to set Defualt Speeds */
-    let speedTypes = {
+    let defaultSpeeds = {
         "Run": () => {runSpeed = baseSpeed + parseInt(character.agility / 5)},
         "Climb": () => {climbSpeed = parseInt(runSpeed / 2) + runSpeed % 2},
         "Jump": () => {jumpSpeed = parseInt(runSpeed / 2) + runSpeed % 2},
@@ -55,12 +54,12 @@ function Speed({character}) {
     };
 
     // Set default Speed Stats
-    Object.entries(speedTypes).forEach((speedType) => {
+    Object.entries(defaultSpeeds).forEach((speedType) => {
         const [type, func] = speedType;
         func();
     });
     
-    // Calculate Special Speeds
+    // Calculate Special Speeds from Traits
     character.traits.forEach((trait) => {
             
         if (trait in traitValues) {
@@ -69,6 +68,7 @@ function Speed({character}) {
         }
     });
     
+    // Calculate Special Speeds from Powers
     Object.entries(character.powers).forEach((powerSet) => {
         const [set, powers] = powerSet;
         powers.forEach((power) => {
