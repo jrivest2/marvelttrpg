@@ -21,7 +21,7 @@ function CharacterProfile({character, updateChar}) {
         heroicKarma(newCharacter);
         setKarma(baseKarma)
         setHealth(30 * newCharacter.resilience)
-        setFocus(30 * vigilance)  
+        setFocus(30 * newCharacter.vigilance)  
       }
     };
 
