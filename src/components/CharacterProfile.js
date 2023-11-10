@@ -15,8 +15,8 @@ function CharacterProfile({character, updateChar}) {
     let vigilance = character.vigilance;
   
     const handleSubmit = (term) => {
-      if (stats.filter(newChar => newChar.name == term)[0]) {
-        let newCharacter = stats.filter(newChar => newChar.name == term)[0]
+      if (stats.filter(newChar => newChar.name.toLowerCase() == term.toLowerCase())[0]) {
+        let newCharacter = stats.filter(newChar => newChar.name.toLowerCase() == term.toLowerCase())[0]
         updateChar(newCharacter)
         heroicKarma(newCharacter);
         setKarma(baseKarma)
