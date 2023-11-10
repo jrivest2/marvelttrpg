@@ -24,6 +24,7 @@ function Abilities({character}) {
 
   let hasEvasion = false;
   let hasIntegrity = false;
+  let hasBrawling = false;
 
   function addMelee(value) { mNonCombat += value };
   function addAgility(value) {aNonCombat += value };
@@ -49,7 +50,8 @@ function Abilities({character}) {
     "Brilliance 4": () => addLogic(4),
     "Spider-Sense": () => {aDefense += 2},
     "Evasion": () => {hasEvasion = true},
-    "Integrity": () => {hasIntegrity = true}
+    "Integrity": () => {hasIntegrity = true},
+    "Brawling": () => {hasBrawling = true}
   
   }
 
@@ -104,6 +106,7 @@ function Abilities({character}) {
     //If character has Evasion or Integrity, do the effect at the last second
     if (hasEvasion && aDefense > mDefense) mDefense = aDefense;
     if (hasIntegrity && lDefense > eDefense) eDefense = lDefense;
+    if (hasBrawling && mDefense > aDefense) aDefense = mDefense;
     
     return (
         <div id='ability-stats'>

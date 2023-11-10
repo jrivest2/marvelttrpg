@@ -10,6 +10,7 @@ function DamageReduction({character}) {
         "Uncanny 2": () => {fDamageReduction = 2},
         "Uncanny 3": () => {fDamageReduction = 3},
         "Uncanny 4": () => {fDamageReduction = 4},
+        "Reinforced Skeleton": () => {hDamageReduction = 1}
 
     }
     Object.entries(character.powers).forEach((powerSet) => {

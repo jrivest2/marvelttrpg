@@ -8,7 +8,7 @@ function PowerRules({character}) {
     let searchStat = "duration";
     let searchPowers = [];
     let outputPowers = powers.map((power, index) => {
-        if (power[searchStat] == searchTerm && !power.integrated) {
+        if (power[searchStat] === searchTerm && !power.integrated[0]) {
             searchPowers = [...searchPowers, <PowerRuleShow power={power} key={index} />]
         }
         return <PowerRuleShow power={power} key={index} />
@@ -18,10 +18,12 @@ function PowerRules({character}) {
     // searchPowers = powers.filter(power => power[searchStat] == searchTerm)
     
 
-    console.log(powers.length)
+    console.log("Total Power Count:", powers.length)
+    console.log("Search Power Count:", outputPowers.length)
     return (
         <div>
-            <div>Power Rules: {searchTerm}</div>
+            <div>Power Rules:</div>
+            <div>{searchStat}: {searchTerm}</div>
             <div>{searchPowers}</div>
         </div>
     );
