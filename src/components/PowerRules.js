@@ -19,7 +19,7 @@ function PowerRules({character}) {
     
 
     console.log("Total Power Count:", powers.length)
-    console.log("Search Power Count:", outputPowers.length)
+    console.log("Search Power Count:", searchPowers.length)
     return (
         <div>
             <div>Power Rules:</div>

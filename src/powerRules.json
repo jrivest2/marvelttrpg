@@ -1498,6 +1498,45 @@
         "integrated": [2, ""]
     },
     {
+        "name": "Focused Fury",
+        "summary": "The character channels their rage into a devastating blow.",
+        "set": ["Melee Weapons"],
+        "prerequisites": ["Exploit", "Rank 3"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "5+",
+        "effect": "The character makes a close attack with an edge. For this attack, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the weapon's special effect.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Furious Attacks",
+        "summary": "The character's weapons smash into the foe.",
+        "set": ["Melee Weapons"],
+        "prerequisites": ["Whirling Frenzy", "Rank 3"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "10+",
+        "effect": "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. For these attacks, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the weapon's special effect.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Grappling Technique",
+        "summary": "The character snags an enemy.",
+        "set": ["Martial Arts"],
+        "prerequisites": ["Rank 2"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "5",
+        "effect": "The character makes a close attack. If the attack is a success, the enemy takes regular damage and is grabbed. On a Fantastic success, the target takes double damage instead and is pinned too.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Healing Factor",
         "summary": "The character heals amazingly fast.",
         "set": [],
@@ -1547,6 +1586,19 @@
         "range": "",
         "cost": "5",
         "effect": "The character fires a hex bolt at a foe. Make an Ego check against the target's Agility defense. On a success, the attack does regular damage. On a Fantastic success, it does double damage and causes the target trouble for one round.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Hit & Run",
+        "summary": "The character hits hard and keeps moving!",
+        "set": ["Melee Weapons"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The character makes a close attack with an edge on an enemy. If the attack is a success, the enemy takes regular damage, and the character can make an additional movement up to half their Run Speed for free. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect.",
         "integrated": [0, ""]
     },
     {
@@ -1888,6 +1940,45 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Slow-Motion Dodge",
+        "summary": "Time seems to slow down for the character, making it easy to dodge enemy attacks.",
+        "set": [],
+        "prerequisites": [],
+        "action": ["Reaction"],
+        "trigger": "An enemy makes an attack against the character's Agility defense.",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The enemy has trouble on the attack.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Snap Shooting",
+        "summary": "The character shoots from the hip with deadly speed.",
+        "set": ["Ranged Weapons"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, an affected target takes half regular damage. On a Fantastic success, an affected target takes full damage and is bleeding.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Sniping",
+        "summary": "The character takes aim and shoots with deadly accuracy.",
+        "set": ["Ranged Weapons"],
+        "prerequisites": ["Rank 2"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "5",
+        "effect": "The character makes a ranged attack against an enemy at least 20 spaces away. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes triple damage instead. NOTICE: This power counts as both the standard and the movement action this turn. The character cannot move this turn.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Spider-Dodge",
         "summary": "The character dodges attacks with a spiderlike scuttle.",
         "set": ["Spider-Powers"],
@@ -2031,6 +2122,19 @@
         "integrated": [2, ""]
     },
     {
+        "name": "Thunder",
+        "summary": "The character causes a deafening crack of thunder.",
+        "set": ["Weather Control"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The character makes an Ego check and compares that against the Resilience defense of every character within 10 spaces. Any character the attack succeeds against is deafened. On a Fantastic success, the character is also stunned for one round.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Uncanny 3",
         "summary": "The character is protected like a tank.",
         "set": [],
@@ -2055,6 +2159,32 @@
         "cost": "",
         "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 4. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
         "integrated": [2, ""]
+    },
+    {
+        "name": "Unflappable Poise",
+        "summary": "The character can dodge most close attacks.",
+        "set": ["Martial Arts"],
+        "prerequisites": ["Defense Stance", "Rank 3"],
+        "action": [],
+        "trigger": "",
+        "duration": "Permanent",
+        "range": "",
+        "cost": "",
+        "effect": "Any close attacks against the character have trouble. While they use Defense Stance, such attacks have double trouble.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Unstoppable Assault",
+        "summary": "The character hews a path through their foes.",
+        "set": ["Melee Weapons"],
+        "prerequisites": ["Furious Attacks", "Focused Fury", "Rank 4"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "15",
+        "effect": "The character makes a Melee check and compares that against the Melee defense of every enemy within their reach. Any enemy the attack succeeds against takes half regular damage. On a Fantastic success, those enemies take full regular damage instead and suffer the weapon's special effect.\nThe character may then pay 15 more Focus to do the same thing again—before which they can move up to half their Speed with whatever is left from their normal movement action. They can keep doing this until they run out of Speed or Focus. Each target can only be affected by this attack by this character once per round.",
+        "integrated": [0, ""]
     },
     {
         "name": "Venom Blast",
@@ -2094,6 +2224,19 @@
         "cost": "",
         "effect": "The character can climb at a speed equal to their regular speed. Under normal conditions, they never lose their grip, no matter the angle of the surface.",
         "integrated": [2, ""]
+    },
+    {
+        "name": "Weapons Blazing",
+        "summary": "The character blazes away at two foes at once.",
+        "set": ["Ranged Weapons"],
+        "prerequisites": ["Snap Shooting"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character makes a bonus attack with this power against any available target, with the same effect.",
+        "integrated": [0, ""]
     },
     {
         "name": "Webcasting",

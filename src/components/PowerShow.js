@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import PowerRuleShow from './PowerRuleShow';
 
-function PowerShow({power}) {
-    
+function PowerShow({power, subPower}) {
+
     let [isClicked, setIsClicked] = useState(false);
 
     const handleClick = () => {
@@ -25,6 +25,16 @@ function PowerShow({power}) {
     // Use the below code instead when powersFile/powerRules.JSON is complete
 
     if (isClicked) {
+        if (subPower) {
+            return (
+                <div>
+                    <div onClick={handleClick}>{power.name}: {subPower}</div>
+                    <hr></hr>
+                    <PowerRuleShow power={power} subPower={subPower} />
+                    <hr></hr>
+                </div>
+            )
+        }
         return (
             <div>
                 <div onClick={handleClick}>{power.name}</div>
@@ -35,7 +45,7 @@ function PowerShow({power}) {
         )
     }
 
-
+    if (subPower) return <div onClick={handleClick}>{power.name}: {subPower}</div>
     return <div onClick={handleClick}>{power.name}</div>
 
 };

@@ -1,6 +1,5 @@
 function PowerRuleShow({power}) {
 
-    
     let outputStats = Object.entries(power).map((stat, index) => {
         
         if (stat[1].length !=0 && stat[0] != "name") {

@@ -9,12 +9,21 @@ function Powers({character}) {
     Object.entries(character.powers).forEach((powerSet) => {
         const [set, powers] = powerSet;
         numSets++;
-        outputPowers = [...outputPowers, <div key={outputPowers.length + 1}><b>{set + ":"}</b></div>];
+        outputPowers = [...outputPowers, <div key={outputPowers.length}><b>{set + ":"}</b></div>];
         const nextSet = powers.map((power, index) => {
-            // Uncomment the lines below when powersFile is complete
-            power = powersFile.filter(entry => entry.name == power)
-            if (power.length) return <PowerShow power={power[0]} key={index} />
-            return <PowerShow power={power} key={index} />
+
+            if (typeof(power) == "object") {
+                console.log(power)
+                let [powerName, subPower] = power 
+                power = powersFile.filter(entry => entry.name == power[0])[0]
+
+                return <PowerShow power={power} key={index} subPower={subPower} />
+            }
+            else {
+                power = powersFile.filter(entry => entry.name == power)[0]
+                return <PowerShow power={power} key={index} />
+            }
+            
         });
         outputPowers = [...outputPowers, nextSet];
     });
