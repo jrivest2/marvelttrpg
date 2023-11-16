@@ -225,7 +225,7 @@
                 "Basic": ["Heightened Senses 1", "Inspiration", "Mighty 2"],
                 "Spider Powers": ["Jump 1", "Wallcrawling"],
                 "Super Strength": ["Banging Heads", "Clobber"],
-                "Telepathy": [["Animal Bond", ["Tippy-Toe"]], ["Animal Communication", ["Squirrels"]]]
+                "Telepathy": [["Animal Bond", "Tippy-Toe"], ["Animal Communication", "Squirrels"]]
         },
         "traits": ["Combat Reflexes", "Glibness", "Honest", "Quick Learner"],
         "tags": ["Extreme Appearance", "Heroic", "Mentor: Nancy Whitehead", "Mysterious", "Obligation: School", "Public Identity"],
@@ -328,7 +328,7 @@
         "logic": 4,
         "image": "/img/thor-jane.png",
         "powers": {
-                "Basic": ["Combat Trickery", "Discipline 2", "Flight 2", ["Iconic Weapon", ["Mjolnir", ["+1 Melee Damage Multiplier.", "+1 Agility Damage Multiplier.", "Returns to thrower.", "Can only be wielded by the worthy."]]], "Mighty 4", "Sturdy 2"],
+                "Basic": ["Combat Trickery", "Discipline 2", "Flight 2", ["Iconic Weapon", ["Mjolnir", ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier", "Returns to thrower.", "Can only be wielded by the worthy."]]], "Mighty 4", "Sturdy 2"],
                 "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push", "Elemental Ricochet"],
                 "Weather Control": ["Control Fog", "Control Weather 4", "Thunder"]
         },
@@ -349,7 +349,8 @@
                 "base": "New York City, Asgard",
                 "history": "Jane Foster served as a nurse for Doctor Donald Blake, the alter ego of Thor Odinson, with whom she fell in love. Thor's father, Odin, separated them, though, and Foster went on to become a doctor herself, as well as a wife and mother. She later divorced her husband, who retained custody of their son.\nWhile Foster battled breast cancer, Thor Odinson lost the ability to use his magic hammer, Mjolnir. The hammer reached out to Foster, who took possession of it and gained the power of Thor. Odinson gave his blessing and approved of Foster using the name Thor. Becoming Thor purged Foster's body of the chemotherapy drugs fighting her cancer, though and after a series of adventures that nearly killed her, she gave up being Thor and successfully fought her cancer. She later became a Valkyrie to help shepherd the souls of dead heroes to Valhalla.",
                 "personality": "Foster is smart, capable and determined, able to stand up to Asgardian gods. Life has not always been kind to her, but she's survived it all and come out more independent and capable than ever."
-        }
+        },
+        "hasIconicWeapon":true
         
     },
     {
@@ -365,7 +366,7 @@
         "powers": {
                 "Basic": ["Brawling", "Combat Trickery", "Healing Factor", "Heightened Senses 1", ["Iconic Weapon", ["Adamantium Claws", ["+1 Melee Damage Multiplier"]]], "Reinforced Skeleton", "Uncanny 1"],
                 "Martial Arts": ["Attack Stance", "Grappling Technique"],
-                "Melee Weapons": ["Exploit", "Fast Attacks", "Focused Fury", "Furious Attacks", "Hit & Run", "Riposte", "Unstoppable Assault", "Vicious Attack", "Whirling Frenzy"]
+                "Melee Weapons (Sharp)": ["Exploit", "Fast Attacks", "Focused Fury", "Furious Attacks", "Hit & Run", "Riposte", "Unstoppable Assault", "Vicious Attack", "Whirling Frenzy"]
         },
         "traits": ["Battle Ready", "Berserker", "Combat Expert", "Combat Reflexes", ["Connections", "Military"], "Situational Awareness", "Tech Reliance"],
         "tags": ["Extreme Appearance", ["Enemy", "Sabretooth"], "Heroic", "Hounded", "Krakoan", "Public Identity", "X-Gene"],
@@ -384,7 +385,8 @@
                 "base": "Krakoa, Summer House (the Blue Area of the Moon",
                 "history": "Born in Canada in the late 1800s, James Howlett wandered the world under the name Logan. At one point, the Weapon X program captured him and bonded adamantium metal to his entire skeleton, including his retractable claws; his mutant healing factor enabled him to survive the experience. He escaped, but with large gaps in his memory.\nLogan later joined the X-Men and became a valued member of various X-teams. Over time, he recovered most of his memories. He was killed in recent years, but returned to life in time to help establish a new mutant nation on the island of Krakoa.",
                 "personality": "Logan can be cold-blooded and slow to trust others, but the restoration of his memory blunted those edges. He's still a no-nonsense man, but that's tempered with the wisdom age brings. After living as a loner for so long, he treasures his found family."
-        }
+        },
+        "hasIconicWeapon": true
         
     },
     {
@@ -400,7 +402,7 @@
         "powers": {
                 "Basic": ["Inspiration", "Slow-Motion Dodge"],
                 "Martial Arts": ["Attack Stance", "Counterstrike Technique", "Defense Stance", "Unflappable Poise"],
-                "Ranged Weapons": ["Sniping", "Snap Shooting", "Weapons Blazing"],
+                "Ranged Weapons": ["Snap Shooting", "Sniping", "Weapons Blazing"],
                 "Tactics": ["Change of Plans", "Combat Support"]
         },
         "traits": ["Beguiling", ["Connections", "Espionage"], "Determination", "Free Running", "Leverage", "Sneaky"],
@@ -420,6 +422,41 @@
                 "base": "mobile",
                 "history": "Trained from a young age to be a Russian special agent, Natasha Romanoff defected to the United States after clashing with the Avengers. Since then, Natasha has served as a vital ally to many of the most powerful organizations on the planet, particularly S.H.I.E.L.D and the Avengers.\nNatasha spent much of her career as a solo mercenary, doing high-level black ops for paying clients. She tries to never take a job she believes to be immoral, but in the world of espionage, things are not always so clear-cut.",
                 "personality": "Charming and cool-headed, Natasha's personality makes her an excellent spy. A life of espionage has made her slow to trust others, but those closest to her consider her a good friend and an exceptional team leader."
+        }
+        
+    },
+    {
+        "name": "Thor (Thor Odinson)",
+        "rank": 5,
+        "melee": 8,
+        "agility": 4,
+        "resilience": 8,
+        "vigilance": 2,
+        "ego": 5,
+        "logic": 0,
+        "image": "/img/thor.png",
+        "powers": {
+                "Basic": ["Discipline 1", "Flight 2", ["Iconic Weapon", ["Mjolnir", ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier", "Returns to thrower.", "Can only be wielded by the worthy."]]], "Mighty 4", "Sturdy 2"],
+                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push", "Elemental Ricochet"],
+                "Weather Control": ["Control Fog", "Control Weather 4", "Thunder", "Weather Chill", "Weather Warm"]
+        },
+        "traits": ["Big (Reach 2)", "Clueless", "Combat Expert", "Combat Reflexes", ["Connections", "Outsiders"], "Enhanced Physique", "Extra Occupation", "Fresh Eyes", "God Heritage", "Presence", "Stranger"],
+        "tags": ["Authority", ["Enemy", "Gorr the God Butcher"], "Heroic", "Powerful", "Public Identity", "Supernatural", "Worshipped"],
+        "biography": {
+                "name": "Thor Odinson",
+                "height": "6'6\"",
+                "weight": "640 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Big",
+                "size": "Big",
+                "features": "",
+                "occupation": ["Leader", "Outsider"],
+                "origin": [["Mythic", "Asgardian"]],
+                "teams": "Gods of Asgard, Avengers, God Squad",
+                "base": "Asgard",
+                "history": "As the son of Odin—ruler of the Asgardian gods—Thor was destined for greatness. Raised alongside his adopted brother, Loki—the God of Mischief—Thor had many adventures as a youth. When Odin realized Thor needed to learn humility, he erased Thor's memories and sent him to Earth as a medical student Donald Blake. After learning his lesson, he recovered his powers and memories, and served both Asgard and Earth as Thor. After Thor (and a number of variants) defeated Malekith in the War of the Realms, he became the new All-Father of Asgard. Ruling over his people does not suit the thunder god, well as he prefers to be an active hero instead.",
+                "personality": "Thor can be grim when faced with his responsibilities, but he feels most himself when given something he can strike with his enchanted hammer, Mjolnir—preferably a worthy foe. There is little he enjoys more than a drink after a well-fought battle. Despite all his time on Earth—and in America—he still speaks with an Asgardian accent and often in an old-fashioned way."
         }
         
     },

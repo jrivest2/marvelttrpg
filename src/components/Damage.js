@@ -31,12 +31,39 @@ function Damage({character}) {
    
     }
     
-    character.powers.Basic.forEach((power) => {
-      if (power in powerValues) {
-        let func = powerValues[power];
-        func();
-      }
-    });
+    const iconicWeaponModifiers = {
+      "+1 Melee Damage Multiplier": () => { if (1 + standardDmgMultiplier > mDmgMultiplier) {mDmgMultiplier = standardDmgMultiplier + 1}},
+      "+1 Agility Damage Multiplier": () => { if (1 + standardDmgMultiplier > aDmgMultiplier) {aDmgMultiplier = standardDmgMultiplier + 1}},
+    }
+
+    let iconicWeaponIndex = null;
+    if (character.hasIconicWeapon) {
+      character.powers.Basic.forEach((power, index) => {
+        if (power in powerValues) {
+          let func = powerValues[power];
+          func();
+        }
+        if (typeof(power) == "object") {
+          if (power[0] == "Iconic Weapon") iconicWeaponIndex = index;
+        }
+      });
+    } else {
+      character.powers.Basic.forEach((power) => {
+        if (power in powerValues) {
+          let func = powerValues[power];
+          func();
+        }
+      });
+    }
+
+    if (iconicWeaponIndex || iconicWeaponIndex == 0) {
+      character.powers.Basic[iconicWeaponIndex][1][1].forEach((effect) => {
+        if (effect in iconicWeaponModifiers) {
+          let func = iconicWeaponModifiers[effect]
+          func()
+        }
+      })
+    }
 
     return (
         <div id='dmg-stats'>

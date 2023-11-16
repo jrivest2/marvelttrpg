@@ -10,22 +10,18 @@ function PowerShow({power, subPower}) {
         else setIsClicked(true)
     }
 
-    // if (isClicked) {
-    //     return (
-    //         <div>
-    //             <div onClick={handleClick}>{power}</div>
-    //             <hr></hr>
-    //             <div>INSERT {power}'S DETAILS HERE</div>
-    //             <hr></hr>
-    //         </div>
-    //     )
-    // }
-    // return <div onClick={handleClick}>{power}</div>
-
-    // Use the below code instead when powersFile/powerRules.JSON is complete
-
     if (isClicked) {
         if (subPower) {
+            if (typeof(subPower) == "object") {
+                return (
+                    <div>
+                        <div onClick={handleClick}>{power.name}: {subPower[0]}</div>
+                        <hr></hr>
+                        <PowerRuleShow power={power} subPower={subPower} />
+                        <hr></hr>
+                    </div>
+                );
+            }
             return (
                 <div>
                     <div onClick={handleClick}>{power.name}: {subPower}</div>
@@ -33,7 +29,7 @@ function PowerShow({power, subPower}) {
                     <PowerRuleShow power={power} subPower={subPower} />
                     <hr></hr>
                 </div>
-            )
+            );
         }
         return (
             <div>
@@ -45,7 +41,10 @@ function PowerShow({power, subPower}) {
         )
     }
 
-    if (subPower) return <div onClick={handleClick}>{power.name}: {subPower}</div>
+    if (subPower) {
+        if (typeof(subPower) == "object") { return <div onClick={handleClick}>{power.name}: {subPower[0]}</div>}
+        return <div onClick={handleClick}>{power.name}: {subPower}</div>
+    }
     return <div onClick={handleClick}>{power.name}</div>
 
 };

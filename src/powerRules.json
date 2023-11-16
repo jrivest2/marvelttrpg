@@ -776,7 +776,7 @@
         "duration": "Instant",
         "range": "",
         "cost": "10",
-        "effect": "The character makes an Agility check and compares that against the Agility defense of every enemy within 10 spaces and in their line of sight. Each success does half the regular damage. On a Fantastic success, each enemy takes full damage instead and is bleeding.",
+        "effect": "The character makes an Agility check and compares that against the Agility defense of every enemy within 5 spaces and in their line of sight. Each success does half the regular damage. On a Fantastic success, each enemy takes full damage instead and is bleeding.",
         "integrated": [0, ""]
     },
     {
@@ -1520,7 +1520,7 @@
         "duration": "Instant",
         "range": "",
         "cost": "10+",
-        "effect": "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. For these attacks, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the weapon's special effect.",
+        "effect": "The character makes a Melee check and compares it against the Melee defense of every enemy within their reach. Make a single Melee check and compare it to the targets' Melee defenses. For these attacks, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the weapon's special effect.",
         "integrated": [0, ""]
     },
     {
@@ -1612,7 +1612,7 @@
         "range": "",
         "cost": "",
         "effect": "The Character is known for owning and using a unique and powerful weapon, like Mjolnir (Thor's hammer) or Captain America's shield. The Narrator must approve the details of this weapon. This power can be taken more than once, but each time must be with a different weapon.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Images of Ikonn",
@@ -2236,6 +2236,32 @@
         "range": "",
         "cost": "",
         "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character makes a bonus attack with this power against any available target, with the same effect.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Weather Chill",
+        "summary": "The character cools things down.",
+        "set": ["Weather Control"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "",
+        "effect": "The temperature in an area roughly a mile across falls as low as 0°F.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Weather Warm",
+        "summary": "The character heats things up.",
+        "set": ["Weather Control"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "",
+        "effect": "The temperature in an area roughly a mile across climbs as high as 100°F.",
         "integrated": [0, ""]
     },
     {

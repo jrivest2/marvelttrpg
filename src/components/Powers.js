@@ -13,10 +13,9 @@ function Powers({character}) {
         const nextSet = powers.map((power, index) => {
 
             if (typeof(power) == "object") {
-                console.log(power)
                 let [powerName, subPower] = power 
                 power = powersFile.filter(entry => entry.name == power[0])[0]
-
+                
                 return <PowerShow power={power} key={index} subPower={subPower} />
             }
             else {

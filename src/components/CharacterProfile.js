@@ -13,7 +13,13 @@ function CharacterProfile({character, updateChar}) {
     
     let resilience = character.resilience;
     let vigilance = character.vigilance;
-  
+    
+    let maxHealth = 30 * resilience;
+    let maxFocus = 30 * vigilance;
+    const [health, setHealth] = useState(30 * resilience)
+    const [focus, setFocus] = useState(30 * vigilance)
+    
+    
     const handleSubmit = (term) => {
       if (stats.filter(newChar => newChar.name.toLowerCase() == term.toLowerCase())[0]) {
         let newCharacter = stats.filter(newChar => newChar.name.toLowerCase() == term.toLowerCase())[0]
@@ -21,14 +27,12 @@ function CharacterProfile({character, updateChar}) {
         heroicKarma(newCharacter);
         setKarma(baseKarma)
         setHealth(30 * newCharacter.resilience)
-        setFocus(30 * newCharacter.vigilance)  
+        traitFocus(newCharacter)
+        setFocus(maxFocus)  
       }
     };
 
-    let maxHealth = 30 * resilience;
-    let maxFocus = 30 * vigilance;
-    const [health, setHealth] = useState(30 * resilience)
-    const [focus, setFocus] = useState(30 * vigilance)
+    
 
     function handleHealthSubmit(val) {
       if ((-maxHealth) >= parseInt(val) + health)setHealth(-maxHealth)
@@ -52,7 +56,11 @@ function CharacterProfile({character, updateChar}) {
 
     let baseKarma = 0;
     let tagValues = {
-      "Heroic": (char) => { baseKarma = char.rank; }
+      "Heroic": (char) => { baseKarma = char.rank; },
+    }
+
+    let traitValues = {
+      "Battle Ready": (char) => {maxFocus = 30 * char.vigilance + 30}
     }
 
     function heroicKarma(newcharacter) {
@@ -64,6 +72,15 @@ function CharacterProfile({character, updateChar}) {
         } 
       });
       
+    }
+
+    function traitFocus(newcharacter) {
+      newcharacter.traits.forEach((trait) => {
+        if (trait in traitValues) {
+          let func = traitValues[trait];
+          func(newcharacter);
+        }
+      });
     }
     
     const [karma, setKarma] = useState(baseKarma);
@@ -81,6 +98,12 @@ function CharacterProfile({character, updateChar}) {
 
 
     heroicKarma(character);
+    character.traits.forEach((trait) => {
+      if (trait in traitValues) {
+        let func = traitValues[trait];
+        func(character);
+      }
+    });
     return (
       <section className='hero is-danger'>
         <div className='hero-body'>
@@ -89,10 +112,10 @@ function CharacterProfile({character, updateChar}) {
           <p className='title'>{name}</p>
           <p className='subtitle'>RANK: {rank}</p>
           <img src={ character.image } alt={"Image of " + character.name} />
-          <p>Max Health: {30 * resilience}</p>
+          <p>Max Health: {maxHealth}</p>
           <TextBox onSubmit={handleHealthSubmit} starterText={"Current Health: " + health + " + " }/>
           <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetHealth}>Reset Health</button>
-          <p>Max Focus: {30 * vigilance}</p>
+          <p>Max Focus: {maxFocus}</p>
           <TextBox onSubmit={handleFocusSubmit} starterText={"Current Focus: " + focus + " + " }/>
           <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetFocus}>Reset Focus</button>
 
