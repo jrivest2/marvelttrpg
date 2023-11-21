@@ -1651,7 +1651,20 @@
         "range": "",
         "cost": "",
         "effect": "The Character is known for owning and using a unique and powerful weapon, like Mjolnir (Thor's hammer) or Captain America's shield. The Narrator must approve the details of this weapon. This power can be taken more than once, but each time must be with a different weapon.",
-        "integrated": [2, ""]
+        "integrated": [1, "Weapon Effects that permenantly effect modifiers  are integrated. Other effects are not integrated."]
+    },
+    {
+        "name": "Illumination",
+        "summary": "The character creates a bright light.",
+        "set": ["Illusion"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "",
+        "effect": "The character illuminates one object or point in line of sight, within 50 spaces, with bright light. The character can maintain concentration on the effect even if they move out of range or line of sight.",
+        "integrated": [0, ""]
     },
     {
         "name": "Images of Ikonn",
@@ -1782,6 +1795,19 @@
         "cost": "5",
         "effect": "The character makes a close attack. If it succeeds, the enemy takes regular damage and is knocked prone. If it's a Fantastic success, the enemy is stunned for 1 round too.",
         "integrated": [0, ""]
+    },
+    {
+        "name": "Levitation",
+        "summary": "The character can hover and move.",
+        "set": ["Telekinesis"],
+        "prerequisites": [],
+        "action": [],
+        "trigger": "",
+        "duration": "Permanent",
+        "range": "",
+        "cost": "",
+        "effect": "The character can move through the air in any direction at their Run Speed.",
+        "integrated": [2, ""]
     },
     {
         "name": "Machine Telepathy",

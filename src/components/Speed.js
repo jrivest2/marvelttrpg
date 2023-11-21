@@ -11,6 +11,7 @@ function Speed({character}) {
     let nonCombatFlightSpeed = null;
     let swingSpeed = null;
     let glideSpeed = null;
+    let levitateSpeed = null;
     
     let defaultSpeeds = {
         "Run": () => {runSpeed = baseSpeed + parseInt(character.agility / 5)},
@@ -21,7 +22,8 @@ function Speed({character}) {
         "Flight": () => {flightSpeed = 0},
         "Non-Combat Flight": () => {nonCombatFlightSpeed = 0},
         "Glide": () => {glideSpeed = 0},
-        "Swingline": () => {swingSpeed = 0}
+        "Swingline": () => {swingSpeed = 0},
+        "Levitation": () => {levitateSpeed = 0}
     };
     
 
@@ -34,7 +36,7 @@ function Speed({character}) {
         "Flight 2": () => { flightSpeed = character.rank * runSpeed; nonCombatFlightSpeed = 50 * flightSpeed; jumpSpeed = 0;nonCombatJumpSpeed = 0},
         "Webslinging": () => {swingSpeed = 3 * runSpeed},
         "Webgliding": () => {glideSpeed = 2 * runSpeed},
-
+        "Levitation": () => {levitateSpeed = runSpeed}
     }
 
     const traitValues = {
@@ -50,7 +52,8 @@ function Speed({character}) {
         "Flight": () => {return flightSpeed},
         "Non-Combat Flight": () => {return nonCombatFlightSpeed},
         "Glide": () => {return glideSpeed},
-        "Swingline": () => {return swingSpeed}
+        "Swingline": () => {return swingSpeed},
+        "Levitation": () => {return levitateSpeed}
     };
 
     // Set default Speed Stats

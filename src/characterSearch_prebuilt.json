@@ -419,7 +419,7 @@
                 "occupation": ["Spy"],
                 "origin": ["Special Training"],
                 "teams": "Avengers, Infinity Watch, S.H.I.E.L.D.",
-                "base": "mobile",
+                "base": "Mobile",
                 "history": "Trained from a young age to be a Russian special agent, Natasha Romanoff defected to the United States after clashing with the Avengers. Since then, Natasha has served as a vital ally to many of the most powerful organizations on the planet, particularly S.H.I.E.L.D and the Avengers.\nNatasha spent much of her career as a solo mercenary, doing high-level black ops for paying clients. She tries to never take a job she believes to be immoral, but in the world of espionage, things are not always so clear-cut.",
                 "personality": "Charming and cool-headed, Natasha's personality makes her an excellent spy. A life of espionage has made her slow to trust others, but those closest to her consider her a good friend and an exceptional team leader."
         }
@@ -495,6 +495,45 @@
                 "personality": "Rogers is serious about helping people out, and he's a natural leader, both in and out of combat. He knows that when he's in his costume and carrying his shield he represents everything that is great about the land and people he loves so much."
         },
         "hasIconicWeapon": true
+    },
+    {
+        "name": "Star-Lord",
+        "rank": 5,
+        "melee": 4,
+        "agility": 6,
+        "resilience": 5,
+        "vigilance": 4,
+        "ego": 3,
+        "logic": 3,
+        "image": "/img/star-lord.png",
+        "powers": {
+                "Basic": ["Accuracy 1", "Combat Trickery", ["Environmental Protection", "(space helmet)"], "Healing Factor", "Heightened Senses 1", ["Iconic Weapon", ["Element Gun", ["Can pick elemental effect from air, earth, fire, water, or energy", "returns when summoned"]]], "Inspiration", "Sturdy 1", "Wisecracker"],
+                "Elemental Control (Element Gun)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst"],
+                "Illusion": ["Illumination"],
+                "Martial Arts": ["Attack Stance", "Defense Stance", "Do This All Day"],
+                "Telekinesis": ["Levitation"],
+                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
+        },
+        "traits": ["Combat Reflexes", ["Connections", "Super Heroes"], "Eidetic Memory", "Fearless", "Iron Will", "Piloting", "Tech Reliance"],
+        "tags": ["Alien Heritage", "Black Market Access", "Heroic", ["Linguist", "(translator implant"], "Public Identity", "Streetwise"],
+        "biography": {
+                "name": "Peter Jason Quill",
+                "height": "6'2\"",
+                "weight": "175 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Average",
+                "features": "Glowing left eye (formerly cybernetic), sun tattoo on right hand.",
+                "occupation": ["Adventurer"],
+                "origin": ["Alien"],
+                "teams": "Guardians of the Galaxy, United Front",
+                "base": "Mobile",
+                "history": "Quill grew up without a father, unaware that his mother, Meredith Quill, had conceived him during an affair with a humanoid alien named J'son, the heir to the interstellar Spartax Empire. As a young adult, he worked as a NASA mechanic, but after being fired, he stole a Kree spaceship and escaped to the stars. The space pirates known as the Ravagers found him stranded in space, and their leader, Yondu, allowed him to join their crew. He eventually turned against them and set out on his own, calling himself Star-Lord.\nQuill learned of his father's identity but refused to join him and rule Spartax. Instead, he helped defeat the massive galactic threats mounted by both  Annihilus and then Ultron, after which he formed a group of adventurers known as the Guardians of the Galaxy. Quill recently gained the title Master of the Sun (along with some new powers) and spent over a hundred years adventuring in another dimension before returning to his home reality.\nIn addition to his powers, Quill carries the Element Gun (which allows him to fire different elements), and he wears a space helmet that protects him in outer space, provides him with air to breathe, and allows him to remotely pilot a linked starship.",
+                "personality": "Quill is a natural leader who exudes confidence, even when it's unjustified. He thinks of himself as a principled thief, an outlaw with standards. Despite his disdain for rulers, when he found himself elected as the first president of Spartax, he rose to the occasion—until he was ousted and became an outlaw again.\nQuill is often wracked with guilt over the mistakes he's made, some of which have cost hundreds of thousands of lives, but he does his best to cover those with his bravado and his natural charm. Time has helped heal those wounds."
+        },
+        "hasIconicWeapon": true
+        
     },
     {
         "name": "",
