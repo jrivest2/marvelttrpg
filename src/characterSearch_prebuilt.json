@@ -50,8 +50,8 @@
                 "Basic": ["Brilliance 1", "Combat Trickery", "Evasion", "Inspiration", "Integrity", "Mighty 1", "Wisecracker"],
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"]
         },
-        "traits": ["Audience", "Combat Reflexes", "Connections: Sources", "Free Running", "Inventor", "Pundit", "Scientific Expertise", "Weird"],
-        "tags": ["Heroic", "Obligation: Aunt May", "Poor", "Secret Identity"],
+        "traits": ["Audience", "Combat Reflexes", ["Connections", "Sources"], "Free Running", "Inventor", "Pundit", "Scientific Expertise", "Weird"],
+        "tags": ["Heroic", ["Obligation", "Aunt May"], "Poor", "Secret Identity"],
         "biography": {
                 "name": "Peter Parker",
                 "height": "5'10\"",
@@ -86,7 +86,7 @@
                 "Magic (Sorcery)": ["Astral Form", "Bolts of Balthakk", "Crimson Bands of Cyttorak", "Dispel Spell", "Flames of the Faltine", "Images of Ikonn", "Mists of Morpheus", "Shield of the Seraphim", "Summon Portal", "Winds of Watoomb"],
                 "Power Control": ["Boost Powers", "Dampen Power"]
         },
-        "traits": ["Combat Expert", "Connections: Super Heroes", "Dealmaker", "Extraordinary Origin", "Fearless", "Font of Information", "Situational Awareness", "Weird"],
+        "traits": ["Combat Expert", ["Connections", "Super Heroes"], "Dealmaker", "Extraordinary Origin", "Fearless", "Font of Information", "Situational Awareness", "Weird"],
         "tags": ["Black Market Access", "Chaotic", "Heroic", "Hounded", "Public Identity", "Sorcerous", "Supernatural"],
         "biography": {
                 "name": "Wanda Maximoff",
@@ -121,7 +121,7 @@
                 "Illusion": ["Invisibility"]
         },
         "traits": ["Combat Reflexes", "Free Running", "Quick Learner", "Surprising Power", "Weird"],
-        "tags": ["Heroic", "Mentor: Peter Parker", "Obligation: School", "Secret Identity", "Young"],
+        "tags": ["Heroic", "Mentor: Peter Parker", ["Obligation", "School"], "Secret Identity", "Young"],
         "biography": {
                 "name": "Miles Morales",
                 "height": "5'8\"",
@@ -191,7 +191,7 @@
                 "Super Strength": ["Banging Heads", "Clobber", "Crushing Grip", "Quick Toss"],
                 "Tactics": ["Battle Plan", "Change of Plans"]
         },
-        "traits": ["Connections: Celebrities", "Connections: Criminal", "Dealmaker", "Extra Occupation", "Famous", "Inventor", "Tech Reliance", "Weird"],
+        "traits": [["Connections", "Celebrities"], ["Connections", "Criminal"], "Dealmaker", "Extra Occupation", "Famous", "Inventor", "Tech Reliance", "Weird"],
         "tags": ["Black Market Access", "Enemy: Spider-Man", "Headquarters", "Rich", "Secret Identity", "Streetwise", "Villainous", "Signature Weapon: Pumpkin Bombs (frag grenades)"],
         "biography": {
                 "name": "Norman Osborn",
@@ -228,7 +228,7 @@
                 "Telepathy": [["Animal Bond", "Tippy-Toe"], ["Animal Communication", "Squirrels"]]
         },
         "traits": ["Combat Reflexes", "Glibness", "Honest", "Quick Learner"],
-        "tags": ["Extreme Appearance", "Heroic", "Mentor: Nancy Whitehead", "Mysterious", "Obligation: School", "Public Identity"],
+        "tags": ["Extreme Appearance", "Heroic", "Mentor: Nancy Whitehead", "Mysterious", ["Obligation", "School"], "Public Identity"],
         "biography": {
                 "name": "Doreen Green",
                 "height": "5'3\"",
@@ -262,7 +262,7 @@
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"],
                 "Melee Weapons (Sharp)": ["Fast Attacks", "Vicious Attack", "Whirling Frenzy"]
         },
-        "traits": ["Anathema: Extreme Heat/Extreme Sonics", "Audience", "Bloodthirsty", "Combat Reflexes", "Connections: Sources", "Free Running", "Loner", "Pundit"],
+        "traits": ["Anathema: Extreme Heat/Extreme Sonics", "Audience", "Bloodthirsty", "Combat Reflexes", ["Connections", "Sources"], "Free Running", "Loner", "Pundit"],
         "tags": ["Black Market Access", "Poor", "Public Identity", "Streetwise"],
         "biography": {
                 "name": "Edward Charles Allan \"Eddie\" Brock",
@@ -298,7 +298,7 @@
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"]
         },
         "traits": ["Audience", "Free Running", "Investigation", "Quick Learner", "Tech Reliance", "Weird"],
-        "tags": ["Heroic", "Mentor: George Stacy", "Obligation: School", "Public Identity (Earth-65)", "Secret Identity (Earth-616)", "Tech Reliance: Sentient Suit", "Tech Reliance: Ticket to the Multiverse"],
+        "tags": ["Heroic", "Mentor: George Stacy", ["Obligation", "School"], ["Public Identity", "(Earth-65)"], "Secret Identity (Earth-616)", "Tech Reliance: Sentient Suit", "Tech Reliance: Ticket to the Multiverse"],
         "biography": {
                 "name": "Gwen Stacy",
                 "height": "5'5\"",
@@ -458,6 +458,41 @@
                 "history": "As the son of Odin—ruler of the Asgardian gods—Thor was destined for greatness. Raised alongside his adopted brother, Loki—the God of Mischief—Thor had many adventures as a youth. When Odin realized Thor needed to learn humility, he erased Thor's memories and sent him to Earth as a medical student Donald Blake. After learning his lesson, he recovered his powers and memories, and served both Asgard and Earth as Thor. After Thor (and a number of variants) defeated Malekith in the War of the Realms, he became the new All-Father of Asgard. Ruling over his people does not suit the thunder god, well as he prefers to be an active hero instead.",
                 "personality": "Thor can be grim when faced with his responsibilities, but he feels most himself when given something he can strike with his enchanted hammer, Mjolnir—preferably a worthy foe. There is little he enjoys more than a drink after a well-fought battle. Despite all his time on Earth—and in America—he still speaks with an Asgardian accent and often in an old-fashioned way."
                 
+        },
+        "hasIconicWeapon": true
+    },
+    {
+        "name": "Captain America (Steve Rogers)",
+        "rank": 4,
+        "melee": 6,
+        "agility": 4,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 2,
+        "logic": 2,
+        "image": "/img/captain-america.png",
+        "powers": {
+                "Basic": [["Iconic Weapon", ["Captain America's Shield", ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier", "Grants the User one extra level of the power Shield, up to Shield 4."]]], "Inspiration", "Mighty 1"],
+                "Shield Bearer": ["Brace for Impact", "Do This All Day", "Hurled Shield Bash", "Hurled Shield Block", "Hurled Shield Deflection", "Immovable", "Rico-Shield", "Shield 3", "Shield Bash", "Shield Deflection", "Shield Wall"],
+                "Tactics": ["Change of Plans", "Combat Support"]
+        },
+        "traits": ["Battle Ready", "Beguiling", "Combat Expert", "Combat Reflexes", ["Connections", "Military"], "Public Speaking", "Situational Awareness", "Weird"],
+        "tags": [["Enemy", "Hydra"],["Enemy", "Red Skull"], "Heroic", "Public Identity"],
+        "biography": {
+                "name": "Steve Rogers",
+                "height": "6'2\"",
+                "weight": "240 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Military"],
+                "origin": ["Weird Science"],
+                "teams": "Avengers, S.H.I.E.L.D., U.S. Army",
+                "base": "Avengers Mountain",
+                "history": "At the dawn of World War II, scrawny Steve Rogers was rejected by the U.S. Army as unfit for service, but Dr. Abraham Erskine saw something in him and selected him for the first human trials for his Super-Soldier Serum. A Nazi sympathizer assassinated Erskine during the procedure, but not before Rogers was improved to the peak of human physical ability. As Captain America, Rogers fought Nazis on the front lines in Europe, alongside his sidekick Bucky Barnes—right up until 1945 when they were presumed killed while stopping a plot by the evil Baron Zemo.\nDecades later, the newly formed Avengers found Rogers frozen in a block of ice and revived him. He immediately leaped back into action, defending American ideals and saving the entire planet again and again.",
+                "personality": "Rogers is serious about helping people out, and he's a natural leader, both in and out of combat. He knows that when he's in his costume and carrying his shield he represents everything that is great about the land and people he loves so much."
         },
         "hasIconicWeapon": true
     },

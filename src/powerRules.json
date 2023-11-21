@@ -1602,6 +1602,45 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Hurled Shield Bash",
+        "summary": "The character hurls their mighty shield at an enemy.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Shield Bash", "Rank 2"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "10 spaces times the character's rank",
+        "cost": "5",
+        "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone. The shield then bounces back to the character.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Hurled Shield Block",
+        "summary": "The character hurls their mighty shield to protect an ally from an attack.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Shield 1", "Rank 2"],
+        "action": ["Reaction"],
+        "trigger": "An enemy makes an attack against an ally's Agility.",
+        "duration": "Instant",
+        "range": "5 spaces times the character's rank",
+        "cost": "5",
+        "effect": "The ally gains Health Damage Reduction equal to the character's Shield power against that attack. The shield then bounces back to the character.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Hurled Shield Deflection",
+        "summary": "The character hurls their mighty shield to save an ally from an attack.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Shield Deflection", "Rank 2"],
+        "action": ["Reaction"],
+        "trigger": "An enemy makes an attack against an ally's Agility.",
+        "duration": "Instant",
+        "range": "5 spaces times the character's rank",
+        "cost": "5",
+        "effect": "The enemy has trouble on the attack. The shield then bounces back to the character.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Iconic Weapon",
         "summary": "",
         "set": [],
@@ -1625,6 +1664,19 @@
         "range": "",
         "cost": "5",
         "effect": "The character creates one sound and sight illusory duplicate per rank of one person they've met (including themselves). The duplicates look and sound exactly like the original and are under the character's complete control. They start in the same space as the character and instantly move into any open space around them, up to 2 spaces away, during which time the character can swap places with any of the duplicates. If the character is duplicating themselves, the character's player should secretly record which one is the actual character.\nThe duplicates can move up to 10 spaces away from the character, and they can pretend to attack (and miss) opponents. Any attack that hits a duplicate instantly removes it. If the character successfully attacks someone or does something else to make the truth evident, the illusion ends.\nThis spell can also be used to see through someone else's illusion. When used this way, it gives the character a double edge on their Ego check.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Immovable",
+        "summary": "Nobody pushes the character around.",
+        "set": ["Shield Bearer", "Super-Strength"],
+        "prerequisites": [],
+        "action": ["Reaction"],
+        "trigger": "The character is knocked back or knocked prone.",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "For every point of Melee defense the character has, they can reduce knockback by 1 space.",
         "integrated": [0, ""]
     },
     {
@@ -1914,6 +1966,19 @@
         "integrated": [2, ""]
     },
     {
+        "name": "Rico-Shield",
+        "summary": "The character ricochets their shield from target to target.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Hurled Shield Bash", "Rank 3"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "10 spaces times the character's rank",
+        "cost": "10",
+        "effect": "The character makes a ranged attack on a target. If the attack is a success. the target takes regular damage. On a Fantastic success, the target is also knocked prone, and the character can make an extra attack on another target, adding the extra range between the two targets to the new attack roll. This can be repeated until an attack is not a Fantastic success.\nWhen the attacks are over, the shield then bounces back to the character.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Riposte",
         "summary": "Seeing the enemy off balance, the character strikes back.",
         "set": ["Melee Weapons"],
@@ -1927,6 +1992,84 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Shield 1",
+        "summary": "The character wields a personal shield.",
+        "set": ["Shield Bearer"],
+        "prerequisites": [],
+        "action": ["Standard", "Reaction"],
+        "trigger": "The character is attacked.",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "",
+        "effect": "The character gains Health Damage Reduction 1.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Shield 2",
+        "summary": "The character's shield protects them like a wall.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Shield 1", "Rank 2"],
+        "action": ["Standard", "Reaction"],
+        "trigger": "The character is attacked.",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "5",
+        "effect": "The character gains Health Damage Reduction 2.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Shield 3",
+        "summary": "The character's shield protects better than a tank.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Shield 2", "Rank 4"],
+        "action": ["Standard", "Reaction"],
+        "trigger": "The character is attacked.",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "15",
+        "effect": "The character gains Health Damage Reduction 3.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Shield 4",
+        "summary": "The character's shield protects like a concrete barrier.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Shield 3", "Rank 6"],
+        "action": ["Standard", "Reaction"],
+        "trigger": "The character is attacked.",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "25",
+        "effect": "The character gains Health Damage Reduction 4.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Shield Bash",
+        "summary": "The character bashes a foe with their shield.",
+        "set": ["Shield Bearer"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The character makes a close attack on an enemy within their reach. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Shield Deflection",
+        "summary": "The character uses their shield to deflect attacks.",
+        "set": ["Shield Bearer"],
+        "prerequisites": [],
+        "action": ["Reaction"],
+        "trigger": "The character is the target of an attack against their Agility defense.",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The attack has trouble.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Shield of the Seraphim",
         "summary": "The character produces a magical shield.",
         "set": ["Magic"],
@@ -1937,6 +2080,19 @@
         "range": "",
         "cost": "10",
         "effect": "The character produces a magical shield that protects them from physical damage. Any attacks against them that do 20 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 20 points of damage, it destroys the protection. Either way, the character remains unharmed.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Shield Wall",
+        "summary": "The character stands like an impenetrable wall.",
+        "set": ["Shield Bearer"],
+        "prerequisites": ["Brace for Impact", "Rank 3"],
+        "action": ["Movement"],
+        "trigger": "",
+        "duration": "Concentration",
+        "range": "",
+        "cost": "",
+        "effect": "Attacks against the character have trouble. The character breaks concentration on this power if they use a movement action.",
         "integrated": [0, ""]
     },
     {
