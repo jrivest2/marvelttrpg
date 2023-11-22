@@ -27,4 +27,18 @@
   .character-select {
     text-align: center;
   }
+
+  .character-sheet {
+    text-align: center;
+  }
+
+  .biography {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .power {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }

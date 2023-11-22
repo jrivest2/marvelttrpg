@@ -5,7 +5,6 @@ function CharacterTitleCard({character, img, rank, char, updateChar, updateRende
 
     const clickCharacterHandler = () => {
         let newCharacter = stats.filter(newChar => newChar.name == char.name)[0]
-        console.log(newCharacter)
         updateChar(newCharacter)
         updateRender("Not Default")
     }

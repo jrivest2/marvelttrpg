@@ -20,12 +20,8 @@ function App() {
   const characterArray = stats.filter((newChar) => newChar.name != "")
   let outputArr = []
   characterArray.map((character, index) => {
-    outputArr = [...outputArr, <CharacterTitleCard character={character.name} img={character.image} rank={character.rank}  char={character} updateChar={setCharacter} updateRender={setSelectChar}/>]
-      return (
-        <div key={index} className='column is-4'>
-          <CharacterTitleCard character={character.name} img={character.image} rank={character.rank} />
-        </div>
-      );
+    outputArr = [...outputArr, <CharacterTitleCard character={character.name} img={character.image} rank={character.rank}  char={character} updateChar={setCharacter} updateRender={setSelectChar} key={index}/>]
+      
   });
   
   if (selectChar == "default") {
@@ -48,38 +44,38 @@ function App() {
     );
   } else {
     return (
-      <div>
+      <div className='character-sheet'>
         
         <div id='profile' style={{backgroundColor: "#f14667"}}>
           <button onClick={() => {setSelectChar("default")}}>Return To Character Select</button>
           <CharacterProfile character={character} updateChar={setCharacter} />        
         </div>
         
-        <div>
+        <div className='abilites'>
         <Abilities character={character} />
         </div>
         
         <hr></hr>
         
-        <div>
+        <div className='damage'>
         <Damage character={character} />
         </div>
         
         <hr></hr>
         
-        <div>
+        <div className='powers'>
         <Powers character={character} />
         </div>
         
         <hr></hr>
         
-        <div>
+        <div className='traits-tags'>
         <TraitsTags character={character} />
         </div>
         
         <hr></hr>
   
-        <div>
+        <div className='biography'>
         <Biography character={character} />
         </div>
         
