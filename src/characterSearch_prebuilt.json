@@ -536,6 +536,43 @@
         
     },
     {
+        "name": "Wasp (Janet Van Dyne)",
+        "rank": 4,
+        "melee": 3,
+        "agility": 4,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 5,
+        "logic": 2,
+        "image": "/img/wasp.png",
+        "powers": {
+                "Basic": ["Flight 1", "Inspiration"],
+                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst"],
+                "Resize": ["Grow 2", "Growing Attack", "Shrink 3", "Shrinking Dodge"],
+                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support", "Focus Fire", "Keep Moving"]
+        },
+        "traits": ["Combat Expert", ["Connections", "Celebrities"], "Famous", "Glibness", "Presence", "Public Speaking", "Tech Reliance"],
+        "tags": ["Heroic", "Public Identity", ["Linguist", ["English", "French", "Hungarian", "Italian", "Spanish"]], "Rich"],
+        "biography": {
+                "name": "Janet Van Dyne",
+                "height": "5'4\"",
+                "weight": "110 lbs.",
+                "gender": "Female",
+                "eyes": "Blue",
+                "hair": "Auburn",
+                "size": "Varies",
+                "features": "Cybernetic wings",
+                "occupation": ["Tycoon"],
+                "origin": [["High Tech", "Pym Particles"]],
+                "teams": "Agents of Wakanda, Avengers",
+                "base": "Mobile",
+                "history": "Born a wealthy heiress, Janet Van Dyne caught the bright eye of brilliant scientist Hank Pym. The two quickly became partners, in both crimefighting and romance. Hank developed a special substance called Pym Particles, allowing him to grow and shrink his body mass at will. Using them, Hank and Janet became the superheroes known as Ant-Man and the Wasp, founding members of the Avengers.\nEventually, the pair split, their marriage irreparably broken by Hank's often unstable and abusive behavior, but Janet never stopped being the Wasp. Over the years, she's become a shining example of true heroism for people everywhere, far surpassing her ex-husband as a trusted leader in the super-hero community.",
+                "personality": "Raised as a pampered socialite, Janet makes a surprisingly effective battle leader. However, her social skills also make her an excellent administrator. She takes an empathetic, understanding approach to tackling the problems of her allies and friends."
+        },
+        "hasIconicWeapon": false
+        
+    },
+    {
         "name": "",
         "rank": 0,
         "melee": 0,

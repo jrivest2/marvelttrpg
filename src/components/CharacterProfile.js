@@ -27,8 +27,10 @@ function CharacterProfile({character, updateChar}) {
         heroicKarma(newCharacter);
         setKarma(baseKarma)
         setHealth(30 * newCharacter.resilience)
-        traitFocus(newCharacter)
-        setFocus(maxFocus)  
+        if (newCharacter.traits.includes("Battle Ready")) {
+          traitFocus(newCharacter)
+          resetFocus()
+        } else setFocus(30 * newCharacter.vigilance)
       }
     };
 

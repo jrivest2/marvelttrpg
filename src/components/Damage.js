@@ -68,10 +68,10 @@ function Damage({character}) {
     return (
         <div id='dmg-stats'>
         <h3><b>DAMAGE</b></h3>
-        <h2>Melee: d616 * {mDmgMultiplier} + {character.melee}</h2>
-        <h2>Agility: d616 * {aDmgMultiplier} + {character.agility}</h2>
-        <h2>Ego: d616 * {eDmgMultiplier} + {character.ego}</h2>
-        <h2>Logic: d616 * {lDmgMultiplier} + {character.logic}</h2>
+        <h2>Melee: dMarvel * {mDmgMultiplier} + {character.melee}</h2>
+        <h2>Agility: dMarvel * {aDmgMultiplier} + {character.agility}</h2>
+        <h2>Ego: dMarvel * {eDmgMultiplier} + {character.ego}</h2>
+        <h2>Logic: dMarvel * {lDmgMultiplier} + {character.logic}</h2>
       </div>
     );
 }
