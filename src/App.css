@@ -4,11 +4,27 @@
   align-items: center;
 }
 
-
+.character-select {
+  text-align: center;
+}
 
 .character-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .character-list {
+    display: block; 
+  }
+
+  .container {
+    align-items : center;
+  }
+
+  .character-select {
+    text-align: center;
+  }
 }

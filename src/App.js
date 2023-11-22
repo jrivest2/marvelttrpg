@@ -30,7 +30,7 @@ function App() {
   
   if (selectChar == "default") {
     return (
-      <div>
+      <div className='character-select'>
         <section className='hero is-primary'>
                 <div className='hero-body'>
                     <p className='title'>CHOOSE YOUR CHARACTER</p>
