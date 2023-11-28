@@ -3,7 +3,7 @@ function PowerRuleShow({power, subPower=""}) {
     let outputStats = Object.entries(power).map((stat, index) => {
         
         if (stat[1].length !=0 && stat[0] != "name") {
-            if (stat[0] == "summary") return <div key={index}>{stat[0].toUpperCase()}: <i>{stat[1]}</i></div>;
+            if (stat[0] == "summary") return <div key={index}><i>{stat[1]}</i></div>;
             
             if (stat[0] == "integrated") {
                 switch(stat[1][0]) {

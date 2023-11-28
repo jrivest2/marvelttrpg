@@ -1,3 +1,6 @@
+import Origin from "./Origin";
+import Occupation from "./Occupation";
+
 function Biography({character}) {
     /*
     "name": "Otto Octavius",
@@ -15,6 +18,10 @@ function Biography({character}) {
     "history": "Everything changed for brilliant scientist Otto Octavius after a lab experiment gone wrong drove him mad and left him with mental control of four powerful arms. With these powerful limbs at his disposal, Octavius decided to finance his future research through crime, becoming the super villain Doctor Octopus.\n\nDoc Ock's life has been intertwined with that of his one-time admirer Peter Parker (Spider-Man). Ock has fought Spider-Man countless times, romanced Parker's Aunt May and even become Parker himself for a brief period. As more multiversal variants of Spider-Man appear, more versions of Doc Ock have also manifested themselves.",
     "personality": "Doctor Octopus is a Grade-A n
     */
+   let features = ""
+    if (!character.biography.features) features = "None"
+    else features = character.biography.features
+
     return (
         <div>
             <div><b>BIOGRAPHY</b></div>
@@ -26,9 +33,10 @@ function Biography({character}) {
             <div><b>Hair:</b> {character.biography.hair}</div>
             <div><b>Size:</b> {character.biography.size}</div>
             
-            <div><b>Distinguishing Features:</b> {character.biography.features}</div>
-            <div><b>Occupation:</b> {character.biography.occupation}</div>
-            <div><b>Origin:</b> {character.biography.origin}</div>
+            <div><b>Distinguishing Features:</b> {features}</div>
+            <Occupation occupations={character.biography.occupation} />
+            {/* <div><b>Occupation:</b> {character.biography.occupation}</div> */}
+            <Origin origins={character.biography.origin} />
             <div><b>Teams:</b> {character.biography.teams}</div>
             <div><b>Base:</b> {character.biography.base}</div>
             <div><b>History:</b> {character.biography.history}</div>

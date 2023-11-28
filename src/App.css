@@ -20,10 +20,6 @@
     display: block; 
   }
 
-  .container {
-    align-items : center;
-  }
-
   .character-select {
     text-align: center;
   }
