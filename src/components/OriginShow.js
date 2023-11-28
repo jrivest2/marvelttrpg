@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function OriginShow ({origin}) {
 
-    let [isClicked, setIsClicked] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
 
  
     origin = originStats.filter(entry => entry.name == origin)[0]
