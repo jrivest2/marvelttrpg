@@ -7,6 +7,13 @@
         "traits": ["Fearless", ["Connections", "Super Heroes or Super Villains"]]
     },
     {
+        "name": "Criminal",
+        "description": "The character did something that put them on the wrong side of the law. They might have spent time in jail for their crimes, or they might have gotten away with them scot-free. The fact that they break the law doesn't necessarily make them a bad person, but law enforcers usually don't care about such distinctions.\nIf they are currently wanted by the law for their crimes, they should also take the Hunted tag. If they have served time, they should take the Convict tag too.",
+        "examples": "Ant-Man (Scott Lang), Black Cat, Gambit.",
+        "tags": ["Black Market Access", "Streetwise"],
+        "traits": [["Connections", "Criminal"]]
+    },
+    {
         "name": "Health Care Worker",
         "description": "The character is a doctor, nurse, therapist or other person dedicated to helping heal others. They likely have access to an office where they practice their craft.",
         "examples": "Doc Samson, Doctor Strange, the Night Nurse (Linda Carter), Thor (Jane Foster)",
