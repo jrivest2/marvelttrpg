@@ -35,7 +35,7 @@ function DamageReduction({character}) {
     if (isClicked) {
         return (
             <div>
-                <div onClick={handleClick}>
+                <div className="subtitle" onClick={handleClick}>
                     <div>Health Damage Reduction: -{hDamageReduction}</div>
                     <div>Focus Damage Reduction: -{fDamageReduction}</div>
                 </div>
@@ -55,7 +55,7 @@ function DamageReduction({character}) {
         );
     }
     return (
-        <div onClick={handleClick}>
+        <div className="subtitle" onClick={handleClick}>
             <div>Health Damage Reduction: -{hDamageReduction}</div>
             <div>Focus Damage Reduction: -{fDamageReduction}</div>
         </div>

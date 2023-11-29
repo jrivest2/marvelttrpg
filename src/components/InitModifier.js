@@ -26,7 +26,7 @@ function InitModifier({character}) {
         }
     });
    
-    return <h3>Initiative Modifier: +{initModifier} {initEdge}</h3>
+    return <h3 className="subtitle">Initiative Modifier: +{initModifier} {initEdge}</h3>
 };
 
 export default InitModifier;

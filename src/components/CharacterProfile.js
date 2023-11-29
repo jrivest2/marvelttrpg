@@ -126,14 +126,14 @@ function CharacterProfile({character, updateChar}) {
       else setIsMaxFocusClicked(true)
     }
 
-    let maxHealthOutput = <p onClick={handleMaxHealthClick}>Max Health: {maxHealth}</p>
-    let maxFocusOutput = <p onClick={handleMaxFocusClick}>Max Focus: {maxFocus}</p>
+    let maxHealthOutput = <p className="subtitle" onClick={handleMaxHealthClick}>Max Health: {maxHealth}</p>
+    let maxFocusOutput = <p className="subtitle" onClick={handleMaxFocusClick}>Max Focus: {maxFocus}</p>
     
     
     if (isMaxHealthClicked) {
       maxHealthOutput = (
       <div onClick={handleMaxHealthClick}>
-        <div>Max Health: {maxHealth}</div>
+        <div className="subtitle">Max Health: {maxHealth}</div>
         <hr></hr>
         <div>A character's <i>Health</i> measures their capacity to endure physical damage and keep fighting. It (Current Health) can be temporarily lowered by physical damage.</div>
         <div>To calculate a character's Health, muliply their Resilience by 30. The minimum is 10 Health (Max Health), even if the character's Resilience is less than 1.</div>
@@ -145,7 +145,7 @@ function CharacterProfile({character, updateChar}) {
     }
     if (isMaxFocusClicked) {
       maxFocusOutput = (
-      <div onClick={handleMaxFocusClick}>
+      <div className="subtitle" onClick={handleMaxFocusClick}>
         <div>Max Focus: {maxFocus}</div>
         <hr></hr>
         <div>A character's <i>Focus</i> represents their capacity for concentration and willpower. It (Current Focus) can be temporarily lowered by psychic damage or the use of certain powers.</div>
@@ -165,15 +165,19 @@ function CharacterProfile({character, updateChar}) {
           <p className='subtitle'>RANK: {rank}</p>
           <img src={ character.image } alt={"Image of " + character.name} />
           <div>{maxHealthOutput}</div>
-          <TextBox onSubmit={handleHealthSubmit} starterText={"Current Health: " + health + " + " }/>
-          <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetHealth}>Reset Health</button>
+          <div className="subtitle">
+            <TextBox onSubmit={handleHealthSubmit} starterText={"Current Health: " + health + " + " }/>
+            <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetHealth}>Reset Health</button>
+          </div>
           <div>{maxFocusOutput}</div>
-          <TextBox onSubmit={handleFocusSubmit} starterText={"Current Focus: " + focus + " + " }/>
-          <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetFocus}>Reset Focus</button>
-
+          <div className="subtitle">
+            <TextBox onSubmit={handleFocusSubmit} starterText={"Current Focus: " + focus + " + " }/>
+            <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetFocus}>Reset Focus</button>
+          </div>
           <DamageReduction character={character} />
           <p className='subtitle'>Karma: <button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaMinus}>-</button> {karma}<button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaPlus}>+</button><button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={handleClickKarmaReset}>Reset</button></p>
           <Speed character={character} />
+          <br></br>
           <InitModifier character={character} />
         </div>
       </section>
