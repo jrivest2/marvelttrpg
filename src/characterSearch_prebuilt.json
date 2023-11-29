@@ -262,7 +262,7 @@
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"],
                 "Melee Weapons (Sharp)": ["Fast Attacks", "Vicious Attack", "Whirling Frenzy"]
         },
-        "traits": ["Anathema: Extreme Heat/Extreme Sonics", "Audience", "Bloodthirsty", "Combat Reflexes", ["Connections", "Sources"], "Free Running", "Loner", "Pundit"],
+        "traits": [["Anathema", "Extreme Heat/Extreme Sonics"], "Audience", "Bloodthirsty", "Combat Reflexes", ["Connections", "Sources"], "Free Running", "Loner", "Pundit"],
         "tags": ["Black Market Access", "Poor", "Public Identity", "Streetwise"],
         "biography": {
                 "name": "Edward Charles Allan \"Eddie\" Brock",
@@ -297,8 +297,8 @@
                 "Omniversal Travel": ["Multiversal Portal", "Multiversal Travel", "Multiversal Travel Together"],
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"]
         },
-        "traits": ["Audience", "Free Running", "Investigation", "Quick Learner", "Tech Reliance", "Weird"],
-        "tags": ["Heroic", "Mentor: George Stacy", ["Obligation", "School"], ["Public Identity", "(Earth-65)"], "Secret Identity (Earth-616)", "Tech Reliance: Sentient Suit", "Tech Reliance: Ticket to the Multiverse"],
+        "traits": ["Audience", "Free Running", "Investigation", "Quick Learner", ["Tech Reliance", ["Sentient Suit", "Ticket to the Multiverse"]], "Weird"],
+        "tags": ["Heroic", "Mentor: George Stacy", ["Obligation", "School"], ["Public Identity", "(Earth-65)"]],
         "biography": {
                 "name": "Gwen Stacy",
                 "height": "5'5\"",
@@ -515,7 +515,7 @@
                 "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
         },
         "traits": ["Combat Reflexes", ["Connections", "Super Heroes"], "Eidetic Memory", "Fearless", "Iron Will", "Piloting", "Tech Reliance"],
-        "tags": ["Alien Heritage", "Black Market Access", "Heroic", ["Linguist", "(translator implant"], "Public Identity", "Streetwise"],
+        "tags": ["Alien Heritage", "Black Market Access", "Heroic", ["Linguist", "(translator implant)"], "Public Identity", "Streetwise"],
         "biography": {
                 "name": "Peter Jason Quill",
                 "height": "6'2\"",
