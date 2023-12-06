@@ -41,7 +41,9 @@ function CharacterProfile({character, updateChar}) {
   
   const handleSubmit = (term) => {
     if (stats.filter(newChar => newChar.name.toLowerCase() == term.toLowerCase())[0]) {
+      
       let newCharacter = stats.filter(newChar => newChar.name.toLowerCase() == term.toLowerCase())[0]
+      
       updateChar(newCharacter)
       heroicKarma(newCharacter);
       setKarma(baseKarma)
@@ -122,6 +124,8 @@ function CharacterProfile({character, updateChar}) {
 
   const [isMaxHealthClicked, setIsMaxHealthClicked] = useState(false)
   const [isMaxFocusClicked, setIsMaxFocusClicked] = useState(false)
+  
+  const [isKarmaClicked, setIsKarmaClicked] = useState(false)
 
   const handleMaxHealthClick = () => {
     if (isMaxHealthClicked) setIsMaxHealthClicked(false)
@@ -133,9 +137,15 @@ function CharacterProfile({character, updateChar}) {
     else setIsMaxFocusClicked(true)
   }
 
+  const handleKarmaClick = () => {
+    if (isKarmaClicked) setIsKarmaClicked(false)
+    else setIsKarmaClicked(true)
+  }
+
   let maxHealthOutput = <p className="subtitle" onClick={handleMaxHealthClick}>Max Health: {maxHealth}</p>
   let maxFocusOutput = <p className="subtitle" onClick={handleMaxFocusClick}>Max Focus: {maxFocus}</p>
   
+  let karmaClickedOutput = <div></div>;
   
   if (isMaxHealthClicked) {
     maxHealthOutput = (
@@ -163,6 +173,47 @@ function CharacterProfile({character, updateChar}) {
       <hr></hr>
     </div>)
   }
+  if (isKarmaClicked) {
+    karmaClickedOutput = (
+      <div>
+        <hr></hr>
+        <div className="title"><b>Karma</b></div>
+        <div><i>Karma</i> represents that wild mix of luck, grit and destiny that seems to intervene in the lives of heroes. All heroes have Karma equal to their rank. To be considered a hero, the character has to have the tag "Heroic".</div>
+        <br></br>
+        <div><b>Example:</b> <i>Spider-Man is Rank 4, so he has 4 points of Karma.</i></div>
+        <br></br>
+        <div className="subtitle">Using Karma</div>
+        <div>After a character makes an action check, they can spend a point of Karma to gain an edge on the check. This allows them to reroll one of their dice.</div>
+        <div>When an enemy makes an action check that affects a character, the target can spend a point of Karma to give the attacker trouble on the check. This forces the attacker to reroll the best one of their dice.</div>
+        <div>A character cannot spend more than 1 point of Karma on any given action check.</div>
+        <div>A character's Karma resets to its standard number each time they get a decent night's sleep.</div>
+        <br></br>
+        <div className="subtitle">Recovering with Karma</div>
+        <div>If a hero is low on Health or Focus, they can spend a Karma point to make an action check to recover some of it.</div>
+        <div>For a Health recovery, make a Resilience check. For a Focus recovery, make a Vigilance check. The target number for either is 10.</div>
+        <div>On a success, total up the number normally and multiply it by the character's rank, just like you would with a damage roll. The character gains that many Health or focus points back, up to their maximum scores. A Fantastic success gives double that amount back.</div>
+        <div>You cannot spend additional Karma on this check to reroll a die.</div>
+        <div>In some circumstances, a character's teammate can spend a point of Karma to give them a recovery check as well.</div>
+        <br></br>
+        <div className="subtitle">Earning Karma</div>
+        <div>The Narrator can give a character a point of Karma for several reasons, at their discretion. Some examples include:</div>
+        <ul>
+          <li>The player did an excellent job role-playing the character.</li>
+          <li>The character rescued someone.</li>
+          <li>The character went out of their way to help someone.</li>
+          <li>The character made an inspiring speech.</li>
+          <li>The character shouted their catchphrase at an appropriate moment.</li>
+          <li>One of the character's challenging traits came into play.</li>
+        </ul>
+        <div>A character can have more Karma than their starting number, but if they fail to spend it before their Karma resets, they lose the excess.</div>
+        <br></br>
+        <div className="subtitle">Karma and Acting Heroic</div>
+        <div>Only characters with the tag "Heroic" start out with Karma, but other characters can earn Karma too by doing good things—even if they are not generally heroic people. This includes villains, like Doctor Doom or Killmonger, and the antiheroes like the Punisher too.</div>
+        <div>To make any use out of the Karma they earn, these non-heroes should spend it that same day. Otherwise, after they have a full night's sleep, their earned Karma vanishes.</div>
+        <hr></hr>
+      </div>
+    )
+  }
   return (
     <section className='hero is-danger'>
       <div className='hero-body'>
@@ -182,7 +233,8 @@ function CharacterProfile({character, updateChar}) {
           <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetFocus}>Reset Focus</button>
         </div>
         <DamageReduction character={character} />
-        <p className='subtitle'>Karma: <button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaMinus}>-</button> {karma}<button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaPlus}>+</button><button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={handleClickKarmaReset}>Reset</button></p>
+        <p className='subtitle'><b onClick={handleKarmaClick}>Karma</b>: <button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaMinus}>-</button> {karma}<button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaPlus}>+</button><button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={handleClickKarmaReset}>Reset</button></p>
+        <div>{karmaClickedOutput}</div>
         <Speed character={character} />
         <br></br>
         <InitModifier character={character} />
