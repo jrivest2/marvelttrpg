@@ -121,7 +121,7 @@
                 "Illusion": ["Invisibility"]
         },
         "traits": ["Combat Reflexes", "Free Running", "Quick Learner", "Surprising Power", "Weird"],
-        "tags": ["Heroic", "Mentor: Peter Parker", ["Obligation", "School"], "Secret Identity", "Young"],
+        "tags": ["Heroic", ["Mentor", "Peter Parker"], ["Obligation", "School"], "Secret Identity", "Young"],
         "biography": {
                 "name": "Miles Morales",
                 "height": "5'8\"",
@@ -155,7 +155,7 @@
                 "Super Strength": ["Banging Heads", "Jump 1"],
                 "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
         },
-        "traits": ["Big (Reach 2)", "Clinician", "Combat Reflexes", "Free Running", "Inventor", "Scientific Expertise"],
+        "traits": ["Big", "Clinician", "Combat Reflexes", "Free Running", "Inventor", "Scientific Expertise"],
         "tags": ["Extreme Appearance", "Heroic", "Hounded", "Krakoan", "Lab Access", "Public Identity", "X-Gene"],
         "biography": {
                 "name": "Henry Philip \"Hank\" McCoy",
@@ -192,7 +192,7 @@
                 "Tactics": ["Battle Plan", "Change of Plans"]
         },
         "traits": [["Connections", "Celebrities"], ["Connections", "Criminal"], "Dealmaker", "Extra Occupation", "Famous", "Inventor", "Tech Reliance", "Weird"],
-        "tags": ["Black Market Access", "Enemy: Spider-Man", "Headquarters", "Rich", "Secret Identity", "Streetwise", "Villainous", "Signature Weapon: Pumpkin Bombs (frag grenades)"],
+        "tags": ["Black Market Access", ["Enemy", "Spider-Man"], "Headquarters", "Rich", "Secret Identity", "Streetwise", "Villainous", ["Signature Weapon", "Pumpkin Bombs (frag grenades)"]],
         "biography": {
                 "name": "Norman Osborn",
                 "height": "5'11\"",
@@ -228,7 +228,7 @@
                 "Telepathy": [["Animal Bond", "Tippy-Toe"], ["Animal Communication", "Squirrels"]]
         },
         "traits": ["Combat Reflexes", "Glibness", "Honest", "Quick Learner"],
-        "tags": ["Extreme Appearance", "Heroic", "Mentor: Nancy Whitehead", "Mysterious", ["Obligation", "School"], "Public Identity"],
+        "tags": ["Extreme Appearance", "Heroic", ["Mentor", "Nancy Whitehead"], "Mysterious", ["Obligation", "School"], "Public Identity"],
         "biography": {
                 "name": "Doreen Green",
                 "height": "5'3\"",
@@ -298,7 +298,7 @@
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"]
         },
         "traits": ["Audience", "Free Running", "Investigation", "Quick Learner", ["Tech Reliance", ["Sentient Suit", "Ticket to the Multiverse"]], "Weird"],
-        "tags": ["Heroic", "Mentor: George Stacy", ["Obligation", "School"], ["Public Identity", "(Earth-65)"]],
+        "tags": ["Heroic", ["Mentor", "George Stacy"], ["Obligation", "School"], ["Public Identity", "(Earth-65)"]],
         "biography": {
                 "name": "Gwen Stacy",
                 "height": "5'5\"",
@@ -440,7 +440,7 @@
                 "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push", "Elemental Ricochet"],
                 "Weather Control": ["Control Fog", "Control Weather 4", "Thunder", "Weather Chill", "Weather Warm"]
         },
-        "traits": ["Big (Reach 2)", "Clueless", "Combat Expert", "Combat Reflexes", ["Connections", "Outsiders"], "Enhanced Physique", "Extra Occupation", "Fresh Eyes", "God Heritage", "Presence", "Stranger"],
+        "traits": ["Big", "Clueless", "Combat Expert", "Combat Reflexes", ["Connections", "Outsiders"], "Enhanced Physique", "Extra Occupation", "Fresh Eyes", "God Heritage", "Presence", "Stranger"],
         "tags": ["Authority", ["Enemy", "Gorr the God Butcher"], "Heroic", "Powerful", "Public Identity", "Supernatural", "Worshipped"],
         "biography": {
                 "name": "Thor Odinson",
@@ -448,7 +448,7 @@
                 "weight": "640 lbs.",
                 "gender": "Male",
                 "eyes": "Blue",
-                "hair": "Big",
+                "hair": "Blond",
                 "size": "Big",
                 "features": "",
                 "occupation": ["Leader", "Outsider"],

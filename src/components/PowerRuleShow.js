@@ -8,11 +8,11 @@ function PowerRuleShow({power, subPower=""}) {
             if (stat[0] == "integrated") {
                 switch(stat[1][0]) {
                     case 1:
-                        return <div key={index}>This power's effects have been <b>PARTIALLY</b> integrated into the website. {stat[1][1]}</div>;
+                        return <div key={index}><br></br>This power's effects have been <b>PARTIALLY</b> integrated into the website. {stat[1][1]}</div>;
                     case 2:
-                        return <div key={index}>This power's effects have been integrated into the website! No need for additional math.</div>;
+                        return <div key={index}><br></br>This power's effects have been integrated into the website! No need for additional math.</div>;
                     default:
-                        return <div key={index}>This power's effects have <b>NOT</b> yet been integrated into the website. You will need to keep track of its effects on your own.</div>;
+                        return <div key={index}><br></br>This power's effects have <b>NOT</b> yet been integrated into the website. You will need to keep track of its effects on your own.</div>;
                     
                 } 
             } 
