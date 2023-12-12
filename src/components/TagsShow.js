@@ -45,7 +45,7 @@ function TagsShow({ tag }) {
 
                 return (
                     <div>
-                        <div onClick={handleClick}>{tag[0]}: {outputString}</div>
+                        <div onClick={handleClick}>{tag[0]}<sup className="clickScript">i</sup>: {outputString}</div>
                         <hr></hr>
                         <div>{tagStatsOutput}</div>
                         <hr></hr>
@@ -55,7 +55,7 @@ function TagsShow({ tag }) {
 
             return (
                 <div>
-                    <div onClick={handleClick}>{tag[0]}: {tag[1]}</div>
+                    <div onClick={handleClick}>{tag[0]}<sup className="clickScript">i</sup>: {tag[1]}</div>
                     <hr></hr>
                     <div>{tagStatsOutput}</div>
                     <hr></hr>
@@ -85,7 +85,7 @@ function TagsShow({ tag }) {
 
         return (
             <div>
-                <div onClick={handleClick}>{tag}</div>
+                <div onClick={handleClick}>{tag}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div>{tagStatsOutput}</div>
                 <hr></hr>
@@ -103,16 +103,16 @@ function TagsShow({ tag }) {
                 outputString += element + ", "
             });
             outputString = outputString.slice(0,-2)
-            return <div onClick={handleClick}>{tag[0]}: {outputString}</div>
+            return <div onClick={handleClick}>{tag[0]}<sup className="clickScript">i</sup>: {outputString}</div>
         }
-        return <div onClick={handleClick}>{tag[0]}: {tag[1]}</div>
+        return <div onClick={handleClick}>{tag[0]}<sup className="clickScript">i</sup>: {tag[1]}</div>
     }
 
 
 
 
 
-    return <div onClick={handleClick}>{tag}</div>
+    return <div onClick={handleClick}>{tag}<sup className="clickScript">i</sup></div>
 }
 
 export default TagsShow;

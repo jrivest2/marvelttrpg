@@ -18,7 +18,7 @@ function OccupationShow({occupation}) {
             if ((stat[0] == "tags" || stat[0] == "traits" || stat[0] == "powers") && stat[1].length > 1) {
                 
                 let outputString = ""
-                stat[1].map((traitTag) => {outputString += traitTag + ", "})
+                stat[1].map((traitTag) => {outputString += traitTag + ", "}) //<-- Expand this block to fix the sub trait/tag bug
                 outputString = outputString.substring(0, outputString.length - 2)
                 return <div key={index}>{stat[0].toUpperCase()}: {outputString}</div>
                 
@@ -29,7 +29,7 @@ function OccupationShow({occupation}) {
         })
         return (
             <div>
-                <div onClick={handleClick}>{occupation.name}</div>
+                <div onClick={handleClick}>{occupation.name}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div><b>Occupation: {occupation.name}</b></div>
                 <div>{occupation.description}</div>
@@ -39,7 +39,7 @@ function OccupationShow({occupation}) {
         );
     }    
 
-    return <div onClick={handleClick}>{occupation.name}</div>
+    return <div onClick={handleClick}>{occupation.name}<sup className="clickScript">i</sup></div>
 }
 
 export default OccupationShow;

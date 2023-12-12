@@ -30,7 +30,7 @@ function Powers({character}) {
 
     return (
         <div>
-        <div><b>POWERS</b></div>
+        <div className="subtitle"><b>POWERS</b></div>
         {outputPowers}
        
         </div>

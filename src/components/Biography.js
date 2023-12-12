@@ -24,7 +24,7 @@ function Biography({character}) {
 
     return (
         <div>
-            <div><b>BIOGRAPHY</b></div>
+            <div className="subtitle"><b>BIOGRAPHY</b></div>
             <div><b>Real Name:</b> {character.biography.name}</div>
             <div><b>Height:</b> {character.biography.height}</div>
             <div><b>Weight:</b> {character.biography.weight}</div>
@@ -35,7 +35,6 @@ function Biography({character}) {
             
             <div><b>Distinguishing Features:</b> {features}</div>
             <Occupation occupations={character.biography.occupation} />
-            {/* <div><b>Occupation:</b> {character.biography.occupation}</div> */}
             <Origin origins={character.biography.origin} />
             <div><b>Teams:</b> {character.biography.teams}</div>
             <div><b>Base:</b> {character.biography.base}</div>

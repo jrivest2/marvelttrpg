@@ -24,14 +24,14 @@ function TraitsTags({character}) {
         else setIsTagsClicked(true)
     }
 
-    let traitsHeaderOutput = <div><b>TRAITS</b></div>
-    let tagsHeaderOutput = <div><b>TAGS</b></div>
+    let traitsHeaderOutput = <div className='subtitle' onClick={handleTraitsClick}><b>TRAITS</b><sup className="clickScript">i</sup></div>
+    let tagsHeaderOutput = <div className='subtitle' onClick={handleTagsClick}><b>TAGS</b><sup className="clickScript">i</sup></div>
     if (isTraitsClicked) {
         traitsHeaderOutput = (
             <div>
-                <div><b>TRAITS</b></div>
+                <div className='subtitle' onClick={handleTraitsClick}><b>TRAITS</b><sup className="clickScript">i</sup></div>
                 <hr></hr>
-                <div><b>TRAITS</b></div>
+                <div className='subtitle'><b>TRAITS</b></div>
                 <div>A trait is a label that has a game mechanic associated with it. Some of them are minor powers or abilities, while others simply represent skills. Many traits are available to anyone, while others are restricted to characters of certain origins.</div>
                 <div>
                     A character can acquire traits in three main ways.
@@ -50,7 +50,7 @@ function TraitsTags({character}) {
     if (isTagsClicked) {
         tagsHeaderOutput = (
             <div>
-                <div><b>TAGS</b></div>
+                <div className='subtitle' onClick={handleTagsClick}><b>TAGS</b><sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div><b>TAGS</b></div>
                 <div>A tag is a label that describes an aspect of the character but primarily has a narrative effect rather than a mechanical one. These define facts about the character: who they are, where they come from, how they behave and so on. Many tags are available to anyone, while others are restricted to characters of certain origins.</div>
@@ -64,9 +64,9 @@ function TraitsTags({character}) {
     
     return (
         <div>
-            <div onClick={handleTraitsClick}>{traitsHeaderOutput}</div>
+            <div>{traitsHeaderOutput}</div>
             <div>{traits}</div>
-            <div onClick={handleTagsClick}>{tagsHeaderOutput}</div>
+            <div>{tagsHeaderOutput}</div>
             <div>{tags}</div>
         </div>
     );

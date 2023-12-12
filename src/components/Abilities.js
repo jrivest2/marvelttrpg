@@ -110,7 +110,7 @@ function Abilities({character}) {
     
     return (
         <div id='ability-stats'>
-        <h3><b>ABILITIES</b></h3>
+        <div className="subtitle"><b>ABILITIES</b></div>
         <h2>Melee: {melee} {meleeEdge}</h2>
         <p>Melee Defense: {mDefense}</p>
         <p>Melee Non-Combat: {mNonCombat} {meleeEdge}</p>

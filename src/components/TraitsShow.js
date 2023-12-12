@@ -45,7 +45,7 @@ function TraitsShow({ trait }) {
 
                 return (
                     <div>
-                        <div onClick={handleClick}>{trait[0]}: {outputString}</div>
+                        <div onClick={handleClick}>{trait[0]}<sup className="clickScript">i</sup>: {outputString}</div>
                         <hr></hr>
                         <div>{traitStatsOutput}</div>
                         <hr></hr>
@@ -55,7 +55,7 @@ function TraitsShow({ trait }) {
 
             return (
                 <div>
-                    <div onClick={handleClick}>{trait[0]}: {trait[1]}</div>
+                    <div onClick={handleClick}>{trait[0]}<sup className="clickScript">i</sup>: {trait[1]}</div>
                     <hr></hr>
                     <div>{traitStatsOutput}</div>
                     <hr></hr>
@@ -85,7 +85,7 @@ function TraitsShow({ trait }) {
 
         return (
             <div>
-                <div onClick={handleClick}>{trait}</div>
+                <div onClick={handleClick}>{trait}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div>{traitStatsOutput}</div>
                 <hr></hr>
@@ -103,16 +103,16 @@ function TraitsShow({ trait }) {
                 outputString += element + ", "
             });
             outputString = outputString.slice(0,-2)
-            return <div onClick={handleClick}>{trait[0]}: {outputString}</div>
+            return <div onClick={handleClick}>{trait[0]}<sup className="clickScript">i</sup>: {outputString}</div>
         }
-        return <div onClick={handleClick}>{trait[0]}: {trait[1]}</div>
+        return <div onClick={handleClick}>{trait[0]}<sup className="clickScript">i</sup>: {trait[1]}</div>
     }
 
 
 
 
 
-    return <div onClick={handleClick}>{trait}</div>
+    return <div onClick={handleClick}>{trait}<sup className="clickScript">i</sup></div>
 }
 
 export default TraitsShow;

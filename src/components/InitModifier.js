@@ -39,7 +39,7 @@ function InitModifier({character}) {
     if (isClicked) {
         return (
             <div>
-                <div className="subtitle" onClick={handleClick}>Initiative Modifier: +{initModifier} {initEdge}</div>
+                <div className="subtitle" onClick={handleClick}>Initiative Modifier<sup className="clickScript">i</sup>: +{initModifier} {initEdge}</div>
                 <hr></hr>
                 <div>A character's <i>Initiative Modifier</i> helps determine when they can act during combat. The higher the number, the more likely they are to go first.</div>
                 <div>A character's Initiative Modifier is equal to their Vigilance. If there's an E next to a character's Initiative Modifier, that means they have an edge on their initiative checks.</div>
@@ -53,7 +53,7 @@ function InitModifier({character}) {
 
 
 
-    return <h3 className="subtitle" onClick={handleClick}>Initiative Modifier: +{initModifier} {initEdge}</h3>
+    return <h3 className="subtitle" onClick={handleClick}>Initiative Modifier<sup className="clickScript">i</sup>: +{initModifier} {initEdge}</h3>
 };
 
 export default InitModifier;

@@ -122,11 +122,15 @@ function CharacterProfile({character, updateChar}) {
     }
   });
 
+  const [isRankClicked, setIsRankClicked] = useState(false)  
   const [isMaxHealthClicked, setIsMaxHealthClicked] = useState(false)
   const [isMaxFocusClicked, setIsMaxFocusClicked] = useState(false)
-  
   const [isKarmaClicked, setIsKarmaClicked] = useState(false)
 
+  const handleRankClick = () => {
+    if (isRankClicked) setIsRankClicked(false)
+    else setIsRankClicked(true)
+  }
   const handleMaxHealthClick = () => {
     if (isMaxHealthClicked) setIsMaxHealthClicked(false)
     else setIsMaxHealthClicked(true)
@@ -142,15 +146,38 @@ function CharacterProfile({character, updateChar}) {
     else setIsKarmaClicked(true)
   }
 
-  let maxHealthOutput = <p className="subtitle" onClick={handleMaxHealthClick}>Max Health: {maxHealth}</p>
-  let maxFocusOutput = <p className="subtitle" onClick={handleMaxFocusClick}>Max Focus: {maxFocus}</p>
-  
+  let rankOutput = <p className='subtitle' onClick={handleRankClick}>RANK<sup className="clickScript">i</sup>: {rank}</p>
+  let maxHealthOutput = <p className="subtitle" onClick={handleMaxHealthClick}>Max Health<sup className="clickScript">i</sup>: {maxHealth}</p>
+  let maxFocusOutput = <p className="subtitle" onClick={handleMaxFocusClick}>Max Focus<sup className="clickScript">i</sup>: {maxFocus}</p>
   let karmaClickedOutput = <div></div>;
   
+  if (isRankClicked) {
+    rankOutput = (
+      <div>
+        <p className='subtitle' onClick={handleRankClick}>RANK<sup className="clickScript">i</sup>: {rank}</p>
+        <hr></hr>
+        <div className="title">Rank</div>
+        <div>A character's <i>rank</i> measures their training and raw power. It also determines how many points a player can spend on ability scores and how many power sets, powers and traits a hero can pick.</div>
+        <div>As you play your character, their rank <i>can</i> increase over time, allowing the character to improve. Much of the time, though, a character's rank doesn't change.</div>
+        <div>Most of the characters in the Marvel Multiverse have a rank between 1 and 6. Your original character doesn't have to begin at the lowest rank, and most of them are unlikely to reach such high ranks where they focus on galactic issues rather than ones on Earth. If you're creating a new hero, your Narrator can help you figure out what rank to start at and what your character's rank cap might be.</div>
+        <div>If your Narrator is planning a campaign in which you play young S.H.I.E.L.D operatives, you might start at Rank 1, but if you're going to join the Avengers to fight off a Skrull invasion, you might start at Rank 4,5, or even 6. Sometimes the Narrator might even assign different ranks to heroes in your player group to emulate teams like the Avengers, which often feature heroes with a wide range of ranks.</div>
+        <div>Here are some rank benchmarks.</div>
+        <ul>
+          <li><b>Rank 1—Rookie:</b> This is where most normal people rank. If you're a super hero, you're just getting started and are maybe playing through your origin story. Not long ago, you thought you were a normal person, but now things are changing fast.</li>
+          <li><b>Rank 2—Protector:</b> You're a street-level hero who protects a neighborhood—just like Daredevil guards Hell's Kitchen. You could join a team like the Defenders to protect a city.</li>
+          <li><b>Rank 3—Champion:</b> You're a formidable super hero. You could protect a city—like Ms. Marvel (Kamala Khan) protects Jersey City—or join a nationally renowned team like Alpha Flight or the Champions.</li>
+          <li><b>Rank 4—Legend:</b>You're one of the most powerful super heroes in the nation. You could be your country's champion—like the Black Panther or Captain America—or you could join an internationally known team like the Avengers, the Fantastic Four or the X-Men.</li>
+          <li><b>Rank 5—Mythic:</b> You're one of the most powerful super heroes on the planet, like Thor or the Scarlet Witch. You could protect the globe all by yourself, and even elite teams like the Avengers would eagerly welcome you as a member.</li>
+          <li><b>Rank 6—Cosmic:</b> You're powerful enough to intervene in interstellar conflicts and single-handedly change the outcome, like Captain Marvel or the Silver Surfer. You make choices that decide the fate of entire star systems.</li>
+        </ul>
+        <hr></hr>
+      </div>
+    )
+  }
   if (isMaxHealthClicked) {
     maxHealthOutput = (
-    <div onClick={handleMaxHealthClick}>
-      <div className="subtitle">Max Health: {maxHealth}</div>
+    <div>
+      <div className="subtitle" onClick={handleMaxHealthClick}>Max Health<sup className="clickScript">i</sup>: {maxHealth}</div>
       <hr></hr>
       <div>A character's <i>Health</i> measures their capacity to endure physical damage and keep fighting. It (Current Health) can be temporarily lowered by physical damage.</div>
       <div>To calculate a character's Health, muliply their Resilience by 30. The minimum is 10 Health (Max Health), even if the character's Resilience is less than 1.</div>
@@ -162,8 +189,8 @@ function CharacterProfile({character, updateChar}) {
   }
   if (isMaxFocusClicked) {
     maxFocusOutput = (
-    <div className="subtitle" onClick={handleMaxFocusClick}>
-      <div>Max Focus: {maxFocus}</div>
+    <div>
+      <div className="subtitle" onClick={handleMaxFocusClick}>Max Focus<sup className="clickScript">i</sup>: {maxFocus}</div>
       <hr></hr>
       <div>A character's <i>Focus</i> represents their capacity for concentration and willpower. It (Current Focus) can be temporarily lowered by psychic damage or the use of certain powers.</div>
       <div>To calculate a character's Focus, muliply their Vigilance by 30. The minimum is 10 Focus (Max Focus), even if the character's Vigilance is less than 1.</div>
@@ -220,20 +247,20 @@ function CharacterProfile({character, updateChar}) {
         <h1>Character Sheet</h1>          
         <SearchBarPre onSubmit={handleSubmit} />
         <p className='title'>{name}</p>
-        <p className='subtitle'>RANK: {rank}</p>
+        <div>{rankOutput}</div>
         <img src={ character.image } alt={"Image of " + character.name} />
         <div>{maxHealthOutput}</div>
         <div className="subtitle">
-          <TextBox onSubmit={handleHealthSubmit} starterText={"Current Health: " + health + " + " }/>
+          <TextBox onSubmit={handleHealthSubmit} starterText={"Health: " + health + " + " }/>
           <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetHealth}>Reset Health</button>
         </div>
         <div>{maxFocusOutput}</div>
         <div className="subtitle">
-          <TextBox onSubmit={handleFocusSubmit} starterText={"Current Focus: " + focus + " + " }/>
+          <TextBox onSubmit={handleFocusSubmit} starterText={"Focus: " + focus + " + " }/>
           <button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={resetFocus}>Reset Focus</button>
         </div>
         <DamageReduction character={character} />
-        <p className='subtitle'><b onClick={handleKarmaClick}>Karma</b>: <button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaMinus}>-</button> {karma}<button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaPlus}>+</button><button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={handleClickKarmaReset}>Reset</button></p>
+        <p className='subtitle'><b onClick={handleKarmaClick}>Karma</b><sup className="clickScript">i</sup>: <button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaMinus}>-</button> {karma}<button style={{ backgroundColor: "#f14667", border: "0px solid lightgray", color:"white", fontSize: "25px"}} onClick={handleClickKarmaPlus}>+</button><button style={{ backgroundColor: "", border: "0px solid lightgray", color:"", fontSize: "18px"}} onClick={handleClickKarmaReset}>Reset</button></p>
         <div>{karmaClickedOutput}</div>
         <Speed character={character} />
         <br></br>

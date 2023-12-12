@@ -36,8 +36,8 @@ function DamageReduction({character}) {
         return (
             <div>
                 <div className="subtitle" onClick={handleClick}>
-                    <div>Health Damage Reduction: -{hDamageReduction}</div>
-                    <div>Focus Damage Reduction: -{fDamageReduction}</div>
+                    <div>Health Damage Reduction<sup className="clickScript">i</sup>: -{hDamageReduction}</div>
+                    <div>Focus Damage Reduction<sup className="clickScript">i</sup>: -{fDamageReduction}</div>
                 </div>
                 <hr></hr>
                 <div><b>Damage Reduction</b></div>
@@ -56,8 +56,8 @@ function DamageReduction({character}) {
     }
     return (
         <div className="subtitle" onClick={handleClick}>
-            <div>Health Damage Reduction: -{hDamageReduction}</div>
-            <div>Focus Damage Reduction: -{fDamageReduction}</div>
+            <div>Health Damage Reduction<sup className="clickScript">i</sup>: -{hDamageReduction}</div>
+            <div>Focus Damage Reduction<sup className="clickScript">i</sup>: -{fDamageReduction}</div>
         </div>
     );
 };

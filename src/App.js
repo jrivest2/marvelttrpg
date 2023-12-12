@@ -10,6 +10,7 @@ import Biography from './components/Biography';
 import Powers from './components/Powers';
 import PowerRules from './components/PowerRules';
 import CharacterTitleCard from './components/CharacterTitleCard';
+import BasicActions from './components/BasicActions';
 
 function App() {
 
@@ -63,6 +64,10 @@ function App() {
         
         <hr></hr>
         
+        {/* <BasicActions />
+
+        <hr></hr> */}
+
         <div className='powers'>
         <Powers character={character} />
         </div>

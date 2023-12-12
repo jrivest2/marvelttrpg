@@ -17,7 +17,7 @@ function OriginShow ({origin}) {
         let outputStats = Object.entries(origin).map((stat, index) => {
             if ((stat[0] == "tags" || stat[0] == "traits" || stat[0] == "powers") && stat[1].length > 1) {
                 let outputString = ""
-                stat[1].map((traitTag) => {outputString += traitTag + ", "})
+                stat[1].map((traitTag) => {outputString += traitTag + ", "}) //<-- Expand this block to fix the sub trait/tag bug
                 outputString = outputString.substring(0, outputString.length - 2)
                 return <div key={index}>{stat[0].toUpperCase()}: {outputString}</div>
 
@@ -27,7 +27,7 @@ function OriginShow ({origin}) {
         
         return (
             <div>
-                <div onClick={handleClick}>{origin.name}</div>
+                <div onClick={handleClick}>{origin.name}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div><b>Origin: {origin.name}</b></div>
                 <div>{origin.description}</div>
@@ -38,7 +38,7 @@ function OriginShow ({origin}) {
     }
 
 
-    return <div onClick={handleClick}>{origin.name}</div>;
+    return <div onClick={handleClick}>{origin.name}<sup className="clickScript">i</sup></div>;
 }
 
 export default OriginShow;

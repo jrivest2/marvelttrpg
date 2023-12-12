@@ -26,7 +26,7 @@ function PowerRuleShow({power, subPower=""}) {
             return <div key={index}>{effect}</div>
         })
         return (
-            <div className="power">
+            <div className="powerRule">
                 <div><b>Power: {power.name}</b></div>
                 <div>{outputStats}</div>
                 <br></br>
@@ -37,7 +37,7 @@ function PowerRuleShow({power, subPower=""}) {
         );
     }
     return (
-        <div className="power">
+        <div className="powerRule">
             <div><b>Power: {power.name}</b></div>
             <div>{outputStats}</div>
             <br></br>

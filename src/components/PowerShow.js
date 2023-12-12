@@ -15,7 +15,7 @@ function PowerShow({power, subPower}) {
             if (typeof(subPower) == "object") {
                 return (
                     <div>
-                        <div onClick={handleClick}>{power.name}: {subPower[0]}</div>
+                        <div className={"power"} onClick={handleClick}>{power.name}: {subPower[0]}<sup className="clickScript">i</sup></div>
                         <hr></hr>
                         <PowerRuleShow power={power} subPower={subPower} />
                         <hr></hr>
@@ -24,7 +24,7 @@ function PowerShow({power, subPower}) {
             }
             return (
                 <div>
-                    <div onClick={handleClick}>{power.name}: {subPower}</div>
+                    <div className={"power"} onClick={handleClick}>{power.name}: {subPower}<sup className="clickScript">i</sup></div>
                     <hr></hr>
                     <PowerRuleShow power={power} subPower={subPower} />
                     <hr></hr>
@@ -33,7 +33,7 @@ function PowerShow({power, subPower}) {
         }
         return (
             <div>
-                <div onClick={handleClick}>{power.name}</div>
+                <div className={"power"} onClick={handleClick}>{power.name}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <PowerRuleShow power={power} />
                 <hr></hr>
@@ -42,10 +42,10 @@ function PowerShow({power, subPower}) {
     }
 
     if (subPower) {
-        if (typeof(subPower) == "object") { return <div onClick={handleClick}>{power.name}: {subPower[0]}</div>}
-        return <div onClick={handleClick}>{power.name}: {subPower}</div>
+        if (typeof(subPower) == "object") { return <div onClick={handleClick}>{power.name}: {subPower[0]}<sup className="clickScript">i</sup></div>}
+        return <div onClick={handleClick}>{power.name}: {subPower}<sup className="clickScript">i</sup></div>
     }
-    return <div onClick={handleClick}>{power.name}</div>
+    return <div className={"power"} onClick={handleClick}>{power.name}<sup className="clickScript">i</sup></div>
 
 };
 
