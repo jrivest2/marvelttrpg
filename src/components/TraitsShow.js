@@ -44,7 +44,7 @@ function TraitsShow({ trait }) {
                 outputString = outputString.slice(0,-2)
 
                 return (
-                    <div>
+                    <div className="trait-tag-rule">
                         <div onClick={handleClick}>{trait[0]}<sup className="clickScript">i</sup>: {outputString}</div>
                         <hr></hr>
                         <div>{traitStatsOutput}</div>
@@ -54,7 +54,7 @@ function TraitsShow({ trait }) {
             }
 
             return (
-                <div>
+                <div className="trait-tag-rule">
                     <div onClick={handleClick}>{trait[0]}<sup className="clickScript">i</sup>: {trait[1]}</div>
                     <hr></hr>
                     <div>{traitStatsOutput}</div>
@@ -84,7 +84,7 @@ function TraitsShow({ trait }) {
         });
 
         return (
-            <div>
+            <div className="trait-tag-rule">
                 <div onClick={handleClick}>{trait}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div>{traitStatsOutput}</div>

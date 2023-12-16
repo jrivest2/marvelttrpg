@@ -50,4 +50,19 @@
     font-family: Times, Times New Roman, serif;
     font-style: italic;
   }
+
+  .basic-actions-rule {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .trait-tag-rule {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  p {
+    text-indent: 0%;
+    padding-bottom: 5%;
+  }
  }

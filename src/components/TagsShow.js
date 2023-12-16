@@ -44,7 +44,7 @@ function TagsShow({ tag }) {
                 outputString = outputString.slice(0,-2)
 
                 return (
-                    <div>
+                    <div className="trait-tag-rule">
                         <div onClick={handleClick}>{tag[0]}<sup className="clickScript">i</sup>: {outputString}</div>
                         <hr></hr>
                         <div>{tagStatsOutput}</div>
@@ -54,7 +54,7 @@ function TagsShow({ tag }) {
             }
 
             return (
-                <div>
+                <div className="trait-tag-rule">
                     <div onClick={handleClick}>{tag[0]}<sup className="clickScript">i</sup>: {tag[1]}</div>
                     <hr></hr>
                     <div>{tagStatsOutput}</div>
@@ -84,7 +84,7 @@ function TagsShow({ tag }) {
         });
 
         return (
-            <div>
+            <div className="trait-tag-rule">
                 <div onClick={handleClick}>{tag}<sup className="clickScript">i</sup></div>
                 <hr></hr>
                 <div>{tagStatsOutput}</div>

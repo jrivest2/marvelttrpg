@@ -64,9 +64,9 @@ function App() {
         
         <hr></hr>
         
-        {/* <BasicActions />
+        <BasicActions />
 
-        <hr></hr> */}
+        <hr></hr>
 
         <div className='powers'>
         <Powers character={character} />
