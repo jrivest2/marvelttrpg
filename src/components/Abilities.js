@@ -103,7 +103,7 @@ function Abilities({character}) {
       });
   });
     
-    //If character has Evasion or Integrity, do the effect at the last second
+    //If character has Evasion, Integrity, or Brawling, do the effect at the last second
     if (hasEvasion && aDefense > mDefense) mDefense = aDefense;
     if (hasIntegrity && lDefense > eDefense) eDefense = lDefense;
     if (hasBrawling && mDefense > aDefense) aDefense = mDefense;
@@ -111,23 +111,28 @@ function Abilities({character}) {
     return (
         <div id='ability-stats'>
         <div className="subtitle"><b>ABILITIES</b></div>
-        <h2>Melee: {melee} {meleeEdge}</h2>
-        <p>Melee Defense: {mDefense}</p>
+        <h2><b>Melee</b>: {melee} {meleeEdge}</h2>
+        <div>Melee Defense: {mDefense}</div>
         <p>Melee Non-Combat: {mNonCombat} {meleeEdge}</p>
-        <h2>Agility: {agility} {agilityEdge}</h2>
-        <p>Agility Defense: {aDefense}</p>
+        
+        <h2><b>Agility</b>: {agility} {agilityEdge}</h2>
+        <div>Agility Defense: {aDefense}</div>
         <p>Agility Non-Combat: {aNonCombat} {agilityEdge}</p>
-        <h2>Resilience: {resilience} {resilienceEdge}</h2>
-        <p>Resilience Defense: {rDefense}</p>
+        
+        <h2><b>Resilience</b>: {resilience} {resilienceEdge}</h2>
+        <div>Resilience Defense: {rDefense}</div>
         <p>Resilience Non-Combat: {rNonCombat} {resilienceEdge}</p>
-        <h2>Vigilance: {vigilance} {vigilanceEdge}</h2>
-        <p>Vigilance Defense: {vDefense}</p>
+        
+        <h2><b>Vigilance</b>: {vigilance} {vigilanceEdge}</h2>
+        <div>Vigilance Defense: {vDefense}</div>
         <p>Vigilance Non-Combat: {vNonCombat} {vigilanceEdge}</p>
-        <h2>Ego: {ego} {egoEdge}</h2>
-        <p>Ego Defense: {eDefense}</p>
+        
+        <h2><b>Ego</b>: {ego} {egoEdge}</h2>
+        <div>Ego Defense: {eDefense}</div>
         <p>Ego Non-Combat: {eNonCombat} {egoEdge}</p>
-        <h2>Logic: {logic} {logicEdge}</h2>
-        <p>Logic Defense: {lDefense}</p>
+        
+        <h2><b>Logic</b>: {logic} {logicEdge}</h2>
+        <div>Logic Defense: {lDefense}</div>
         <p>Logic Non-Combat: {lNonCombat} {logicEdge}</p>
       </div>
 
