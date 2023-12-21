@@ -23,7 +23,7 @@ function BasicActions() {
     const [isSkulkClicked, setIsSkulkClicked] = useState(false)
 
     const [isBasicSpeedsClicked, setIsBasicSpeedsClicked] = useState(false)
-    const [isCombiningModesClicked, setIsCombiningModesClicked] = useState(true)
+    const [isCombiningModesClicked, setIsCombiningModesClicked] = useState(false)
     const [isGlidingClicked, setIsGlidingClicked] = useState(false)
     const [isSwingliningClicked, setIsSwingliningClicked] = useState(false)
     const [isTeleportingClicked, setIsTeleportingClicked] = useState(false)
