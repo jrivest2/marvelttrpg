@@ -30,8 +30,9 @@ function TextBox({ onSubmit, starterText }) {
                 </form>
                 <hr></hr>
                 <div className='subtitle'>Health</div>
-                <div>If a character's Health is reduced below 1, they are knocked <i>unconscious</i>. Any powers they were concentrating on end immediately.</div>
-                <div>While unconscious, a character cannot take any actions. Their defense against ranged attacks is reduced to 10, and close attacks automatically hit them. If a character's Health is reduced to a negative value equal in magnitude to their maximum Health, or worse, they are <i>killed</i>.</div>
+                <p>If a character's Health is reduced below 1, they are knocked <i>unconscious</i>. Any powers they were concentrating on end immediately.</p>
+                <p>While unconscious, a character cannot take any actions. Their defense against ranged attacks is reduced to 10, and close attacks automatically hit them. If a character's Health is reduced to a negative value equal in magnitude to their maximum Health, or worse, they are <i>killed</i>.</p>
+                <p><i><b>When attempting to subtract Health, be sure to enter a minus sign before the number!</b></i></p>
                 <hr></hr>
             </div>
         );
@@ -44,8 +45,9 @@ function TextBox({ onSubmit, starterText }) {
                 </form>
                 <hr></hr>
                 <div className='subtitle'>Focus</div>
-                <div>If a character's Focus is reduced to 0, they are <i>demoralized</i>.</div>
-                <div>Any conditions  or powers they were concentrating on end immediately. While demoralized, they have trouble on all actions. If their Focus is reduced to a negative value equal in magnitude to their maximum Focus, or worse, they are <i>shattered</i>: frozen in place by fear and stress.</div>
+                <p>If a character's Focus is reduced to 0, they are <i>demoralized</i>.</p>
+                <p>Any conditions  or powers they were concentrating on end immediately. While demoralized, they have trouble on all actions. If their Focus is reduced to a negative value equal in magnitude to their maximum Focus, or worse, they are <i>shattered</i>: frozen in place by fear and stress.</p>
+                <p><i><b>When attempting to subtract Focus, be sure to enter a minus sign before the number!</b></i></p>
                 <hr></hr>
             </div>
         );
