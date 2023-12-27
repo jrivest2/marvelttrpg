@@ -573,6 +573,76 @@
         
     },
     {
+        "name": "Hydra Agent",
+        "rank": 1,
+        "melee": 1,
+        "agility": 1,
+        "resilience": 1,
+        "vigilance": 1,
+        "ego": 1,
+        "logic": 0,
+        "image": "/img/hydra-agent.png",
+        "powers": {
+                "Ranged Weapons": ["Double Tap", "Snap Shooting", "Suppressive Fire", "Weapons Blazing"]
+        },
+        "traits": ["Battle Ready", "Combat Reflexes", ["Connections", "Military (Hydra)"], "Determination", "Situational Awareness"],
+        "tags": ["Secret Identity", "Villainous"],
+        "biography": {
+                "name": "Varies",
+                "height": "Varies",
+                "weight": "Varies",
+                "gender": "Varies",
+                "eyes": "Varies",
+                "hair": "Varies",
+                "size": "Average",
+                "features": "The green-and-yellow Hydra Uniform",
+                "occupation": ["Military"],
+                "origin": ["Special Training"],
+                "teams": "Hydra",
+                "base": "Secret",
+                "history": "Hydra has reportedly been around in one form or another since the days of Ancient Egypt, and it’s evolved into one of the most dangerous criminal organizations on Earth. The latest incarnation sprang from the ruins of World War II-era Germany and Japan, and various factions of it have wavered back and forth between organized crime and fascist power.\nHydra recruits agents all around the world. In public, they know each other by secret signals and whispers of “Hail Hydra.” In secret, they don their green-and-yellow uniforms and chant the Hydra oath: “Hail, Hydra! Immortal Hydra! We shall never be destroyed! Cut off one head, two more shall take its place! We serve none but the Master—as the world shall soon serve us! Hail Hydra!”",
+                "personality": "Agents join Hydra for a number of reasons that usually boil down to money and power. They believe that Hydra can take over any organization or government, and they want to be on the winning side, no matter what they have to do to manage it. The Hydra uniform makes them mostly anonymous, fitting well with their oath to replace one fallen agent with two more just like them."
+        },
+        "hasIconicWeapon": false
+        
+    },
+    {
+        "name": "Armored Hydra Agent",
+        "rank": 4,
+        "melee": 2,
+        "agility": 6,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 2,
+        "logic": 4,
+        "image": "/img/armored-hydra-agent.png",
+        "powers": {
+                "Basic": ["Accuracy 1", "Discipline 1", "Flight 2", "Mighty 1", "Sturdy 2"],
+                "Elemental Control (Energy)": ["Elemental Blast", "Elemental Burst"],
+                "Ranged Weapons": ["Covering Fire", "Double Tap", "Headshot", "Kill Zone", "Return Fire", "Snap Shooting", "Stopping Power", "Suppressive Fire", "Weapons Blazing"]
+        },
+        "traits": ["Battle Ready", "Combat Expert", "Combat Reflexes", ["Connections", "Military (Hydra)"], "Determination", "Extraordinary Origin", "Piloting", "Situational Awareness", "Tech Reliance"],
+        "tags": [["Extreme Appearance", "(in battle suit)"], "Secret Identity", "Villainous"],
+        "biography": {
+                "name": "Varies",
+                "height": "Varies",
+                "weight": "Varies",
+                "gender": "Varies",
+                "eyes": "Varies",
+                "hair": "Varies",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Military"],
+                "origin": ["High Tech: Battle Suit", "Special Training"],
+                "teams": "Hydra",
+                "base": "Secret",
+                "history": "As a terrorist organization, Hydra uses most of its many recruits (Hydra Agents) as cannon fodder. But sometimes, Hydra will spend the resources upgrading an agent to be their tank on the battlefield. Hydra reverse-engineers the technology of heroes and villains, like Iron Man, War Machine, Iron Monger, Titanium Man and others, to create their own specialized armor. While this new armor may not be as dependable as those superbeings, it can still create a shock troop who can carry out the heaviest Hydra missions.",
+                "personality": "While Armored Hydra Agents remain anonymous members of the terrorist organization, they have an elevated status among their peers. Like all Hydra agents, they are fanatical, mean and merciless."
+        },
+        "hasIconicWeapon": false
+        
+    },
+    {
         "name": "",
         "rank": 0,
         "melee": 0,

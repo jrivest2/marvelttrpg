@@ -48,12 +48,14 @@ function Damage({character}) {
         }
       });
     } else {
-      character.powers.Basic.forEach((power) => {
-        if (power in powerValues) {
-          let func = powerValues[power];
-          func();
-        }
-      });
+      if (character.powers.Basic) {
+        character.powers.Basic.forEach((power) => {
+          if (power in powerValues) {
+            let func = powerValues[power];
+            func();
+          }
+        });
+      }
     }
 
     if (iconicWeaponIndex || iconicWeaponIndex == 0) {

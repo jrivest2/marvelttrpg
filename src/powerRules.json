@@ -1615,6 +1615,19 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Headshot",
+        "summary": "Ouch!",
+        "set": ["Ranged Weapons"],
+        "prerequisites": ["Stopping Power", "Rank 3"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "15",
+        "effect": "The character makes a ranged attack with trouble on an enemy within the weapon's range. If the attack is a success, the enemy takes double normal damage. On a Fantastic success, the enemy takes triple damage. Either way, if the enemy suffers any actual damage, they are also stunned for one round.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Healing Factor",
         "summary": "The character heals amazingly fast.",
         "set": [],
@@ -1875,6 +1888,19 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Kill Zone",
+        "summary": "The character shoots at every target that moves through their kill zone.",
+        "set": ["Ranged Weapons"],
+        "prerequisites": ["Covering Fire", "Headshot", "Rank 4"],
+        "action": ["Reaction"],
+        "trigger": "An enemy in the character's line of sight starts to move.",
+        "duration": "Instant",
+        "range": "",
+        "cost": "15",
+        "effect": "The character makes a ranged attack on the enemy. If the attack is a success, the enemy takes normal damage. On a Fantastic success, the enemy takes double damage. Either way, the character regains their reaction. Each target can be affected by this attack by this character only once per round.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Leg Sweep",
         "summary": "The character knocks the enemy's legs from under them.",
         "set": ["Martial Arts"],
@@ -2081,6 +2107,19 @@
         "cost": "",
         "effect": "The character gets Health Damage Reduction 1.",
         "integrated": [2, ""]
+    },
+    {
+        "name": "Return Fire",
+        "summary": "The character responds to an assault with a hail of shots",
+        "set": ["Ranged Weapons"],
+        "prerequisites": ["Suppressive Fire", "Rank 2"],
+        "action": ["Reaction"],
+        "trigger": "An enemy declares an attack against the character.",
+        "duration": "Instant",
+        "range": "",
+        "cost": "5",
+        "effect": "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled and, if the target takes any Focus damage, they are stunned for 1 round.",
+        "integrated": [0, ""]
     },
     {
         "name": "Rico-Shield",
@@ -2369,6 +2408,19 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Stopping Power",
+        "summary": "The character keeps shooting at the target.",
+        "set": ["Ranged Weapons"],
+        "prerequisites": ["Double Tap", "Rank 2"],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "5",
+        "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage, and the character can make another regular ranged attack on the same target.",
+        "integrated": [0, ""]
+    },
+    {
         "name": "Sturdy 1",
         "summary": "The character has protection from physical damage.",
         "set": [],
@@ -2431,6 +2483,19 @@
         "range": "",
         "cost": "15",
         "effect": "The character opens a glowing portal in a space next to them that teleports anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. This can be between any two points in the Multiverse, as long as the character has seen the destination. Anything can move through the portal in either direction until it is closed, which the character can do at will.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Suppressive Fire",
+        "summary": "The character forces their foes to keep their heads down.",
+        "set": ["Ranged Weapons"],
+        "prerequisites": [],
+        "action": ["Standard"],
+        "trigger": "",
+        "duration": "Instant",
+        "range": "",
+        "cost": "",
+        "effect": "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round.",
         "integrated": [0, ""]
     },
     {

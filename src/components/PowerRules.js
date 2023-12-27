@@ -4,11 +4,15 @@ import PowerRuleShow from './PowerRuleShow';
 function PowerRules({character}) {
     
     // If you update searchTerm, make sure to change the if statement to match.
-    let searchTerm = "Permanent";
-    let searchStat = "duration";
+    let searchTerm = "Ranged Weapons";
+    // let searchTerm = "Elemental Control";
+    // let searchTerm = "Tactics";
+    // let searchTerm = "Basic";
+    let searchStat = "set";
     let searchPowers = [];
     let outputPowers = powers.map((power, index) => {
-        if (power[searchStat] === searchTerm && !power.integrated[0]) {
+        // if (power[searchStat] === searchTerm && !power.integrated[0]) {
+        if (power[searchStat].includes(searchTerm)) {
             searchPowers = [...searchPowers, <PowerRuleShow power={power} key={index} />]
         }
         return <PowerRuleShow power={power} key={index} />
