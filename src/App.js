@@ -87,7 +87,7 @@ function App() {
         <hr></hr>
   
   
-{/*   
+  
         <div style={{ backgroundColor: "red", color: "white" }}><b>*********TESTING PURPOSES*********</b></div>
   
   
@@ -95,7 +95,7 @@ function App() {
         <div>
           <PowerRules character={character} />
         </div>
-   */}
+  
       </div>
     );
   }

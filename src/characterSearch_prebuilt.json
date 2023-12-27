@@ -607,6 +607,42 @@
         
     },
     {
+        "name": "Hydra Officer",
+        "rank": 2,
+        "melee": 2,
+        "agility": 2,
+        "resilience": 2,
+        "vigilance": 2,
+        "ego": 2,
+        "logic": 0,
+        "image": "/img/hydra-officer.png",
+        "powers": {
+                "Basic": ["Combat Trickery", "Inspiration"],
+                "Ranged Weapons": ["Double Tap", "Snap Shooting", "Suppressive Fire", "Weapons Blazing"],
+                "Tactics": ["Battle Plan", "Keep Moving"]
+        },
+        "traits": ["Battle Ready", "Combat Expert", "Combat Reflexes", ["Connections", "Military (Hydra)"], "Determination", "Situational Awareness"],
+        "tags": ["Secret Identity", "Villainous"],
+        "biography": {
+                "name": "Varies",
+                "height": "Varies",
+                "weight": "Varies",
+                "gender": "Varies",
+                "eyes": "Varies",
+                "hair": "Varies",
+                "size": "Average",
+                "features": "The green-and-yellow Hydra Uniform",
+                "occupation": ["Military"],
+                "origin": ["Special Training"],
+                "teams": "Hydra",
+                "base": "Secret",
+                "history": "Hydra tends to treat its lowest-level recruits (Hydra Agents) as cannon fodder, foot soldiers who can be spent or lost without hesitation. After all, there never seems to be a lack of disaffected people looking to join up with the fascist organization to do their part for world domination. As the Hydra oath goes, “Cut off a limb and two more shall take its place!”\nThose agents who survive long enough—or are ambitious enough—find themselves promoted to positions of leadership within their hierarchical organization. Often they’re the leaders of independent cells sequestered from the rest of Hydra for operational security, and the fact that they’ve survived to that point means (at least to them) that they must be doing something right.",
+                "personality": "While Hydra agents like to follow orders, Hydra officers have developed a taste for giving them. They like to shout at their underlings and boss them around, and many of them harbor aspirations of one day becoming the Supreme Hydra themselves. They tend to be mean and merciless—to outsiders, to their subordinates and most especially to those they see as rivals. Many of them see the fact that they’ve risen in the ranks as the proof of their superiority, and because of this, they tend to be cocky as well."
+        },
+        "hasIconicWeapon": false
+        
+    },
+    {
         "name": "Armored Hydra Agent",
         "rank": 4,
         "melee": 2,
