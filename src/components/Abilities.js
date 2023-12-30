@@ -113,27 +113,27 @@ function Abilities({character}) {
         <div className="subtitle"><b>ABILITIES</b></div>
         <h2><b>Melee</b>: {melee} {meleeEdge}</h2>
         <div>Melee Defense: {mDefense}</div>
-        <p>Melee Non-Combat: {mNonCombat} {meleeEdge}</p>
+        <p>Melee Non-Combat: +{mNonCombat} {meleeEdge}</p>
         
         <h2><b>Agility</b>: {agility} {agilityEdge}</h2>
         <div>Agility Defense: {aDefense}</div>
-        <p>Agility Non-Combat: {aNonCombat} {agilityEdge}</p>
+        <p>Agility Non-Combat: +{aNonCombat} {agilityEdge}</p>
         
         <h2><b>Resilience</b>: {resilience} {resilienceEdge}</h2>
         <div>Resilience Defense: {rDefense}</div>
-        <p>Resilience Non-Combat: {rNonCombat} {resilienceEdge}</p>
+        <p>Resilience Non-Combat: +{rNonCombat} {resilienceEdge}</p>
         
         <h2><b>Vigilance</b>: {vigilance} {vigilanceEdge}</h2>
         <div>Vigilance Defense: {vDefense}</div>
-        <p>Vigilance Non-Combat: {vNonCombat} {vigilanceEdge}</p>
+        <p>Vigilance Non-Combat: +{vNonCombat} {vigilanceEdge}</p>
         
         <h2><b>Ego</b>: {ego} {egoEdge}</h2>
         <div>Ego Defense: {eDefense}</div>
-        <p>Ego Non-Combat: {eNonCombat} {egoEdge}</p>
+        <p>Ego Non-Combat: +{eNonCombat} {egoEdge}</p>
         
         <h2><b>Logic</b>: {logic} {logicEdge}</h2>
         <div>Logic Defense: {lDefense}</div>
-        <p>Logic Non-Combat: {lNonCombat} {logicEdge}</p>
+        <p>Logic Non-Combat: +{lNonCombat} {logicEdge}</p>
       </div>
 
     );
