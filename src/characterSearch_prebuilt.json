@@ -10,13 +10,13 @@
         "logic": 5,
         "image": "/img/doc-ock.png",
         "powers": {
-                "Basic": ["Additional Limb", "Brilliance 2", "Mighty 2"],
+                "Basic": ["Additional Limb", "Brilliance 2", "Inspiration", "Mighty 2"],
                 "Plasticity": ["Extended Reach 1"],
                 "Spider Powers": ["Spider-Dodge", "Wallcrawling"],
                 "Super Strength": ["Banging Heads", "Crushing Grip", "Clobber", "Jump 1", "Quick Toss"],
                 "Telepathy": ["Machine Telepathy"]
         },
-        "traits": ["Abrasive", "Extraordinary Origin", "Inventor", "Scientific Expertise", "Skeptical", "Tech Reliance", "Weird"],
+        "traits": ["Abrasive", "Combat Reflexes", "Extraordinary Origin", "Inventor", "Scientific Expertise", "Skeptical", "Tech Reliance", "Weird"],
         "tags": ["Lab Access", "Public Identity", "Villainous"],
         "biography": {
                 "name": "Otto Octavius",
@@ -293,7 +293,7 @@
         "logic": 2,
         "image": "/img/ghost-spider.png",
         "powers": {
-                "Basic": ["Disguise", "Environmental Protection", "Evasion", "Mighty 1"],
+                "Basic": ["Combat Trickery", "Disguise", "Environmental Protection", "Evasion", "Inspiration", "Mighty 1"],
                 "Omniversal Travel": ["Multiversal Portal", "Multiversal Travel", "Multiversal Travel Together"],
                 "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"]
         },
@@ -332,7 +332,7 @@
                 "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push", "Elemental Ricochet"],
                 "Weather Control": ["Control Fog", "Control Weather 4", "Thunder"]
         },
-        "traits": ["Battle Ready", "Clinician", "Combat Reflexes", "Determination", "Enhanced Physique", "Extraordinary Origin", "Fearless", "First Aid", ["God Heritage", "via Mjolnir"]],
+        "traits": ["Battle Ready", "Clinician", "Combat Reflexes", "Determination", "Enhanced Physique", "Extraordinary Origin", "Fearless", "First Aid", ["God Heritage", "via Mjolnir"], "Presence"],
         "tags": [["Enemy", "Gorr the God Butcher"], "Heroic", "Secret Identity", "Supernatural", ["Worshipped", "as Thor"]],
         "biography": {
                 "name": "Jane Foster",
@@ -437,8 +437,8 @@
         "image": "/img/thor.png",
         "powers": {
                 "Basic": ["Discipline 1", "Flight 2", ["Iconic Weapon", ["Mjolnir", ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier", "Returns to thrower.", "Can only be wielded by the worthy."]]], "Mighty 4", "Sturdy 2"],
-                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push", "Elemental Ricochet"],
-                "Weather Control": ["Control Fog", "Control Weather 4", "Thunder", "Weather Chill", "Weather Warm"]
+                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push"],
+                "Weather Control": ["Control Weather 4", "Thunder", "Weather Chill", "Weather Warm"]
         },
         "traits": ["Big", "Clueless", "Combat Expert", "Combat Reflexes", ["Connections", "Outsiders"], "Enhanced Physique", "Extra Occupation", "Fresh Eyes", "God Heritage", "Presence", "Stranger"],
         "tags": ["Authority", ["Enemy", "Gorr the God Butcher"], "Heroic", "Powerful", "Public Identity", "Supernatural", "Worshipped"],

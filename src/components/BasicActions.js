@@ -337,7 +337,7 @@ function BasicActions() {
             <div className="basic-actions-rule">
                 <div onClick={handleSkulkClick}>Skulk<sup className="clickScript">i</sup></div>
                 <hr></hr>
-                <p><b>Trigger:</b>The character is a target of an attack, and someone within their reach is not a target of that attack. </p>
+                <p><b>Trigger:</b>The character is a target of a ranged attack, and someone within their reach is not a target of that attack.</p>
                 <p><b>Effect:</b> The character moves (for free) behind the nearby person, and that person becomes the new target of the attack. The attacker's TN for the attack is the lower of the character's defense or the new target's defense.</p>
                 <hr></hr>
             </div>
