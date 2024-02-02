@@ -1,4 +1,4 @@
-import { useState } from "react";
+import ClickRuleSplitTitle from "./ClickRuleSplitTitle";
 
 function InitModifier({character}) {
     let initModifier = character.vigilance;
@@ -27,33 +27,19 @@ function InitModifier({character}) {
             initEdge = "E";
         }
     });
-   
 
-    const [isClicked, setIsClicked] = useState(false)
-
-    const handleClick = () => {
-        if (isClicked) setIsClicked(false)
-        else setIsClicked(true)
-    }
-
-    if (isClicked) {
-        return (
-            <div>
-                <div className="subtitle" onClick={handleClick}>Initiative Modifier<sup className="clickScript">i</sup>: +{initModifier} {initEdge}</div>
-                <hr></hr>
-                <div>A character's <i>Initiative Modifier</i> helps determine when they can act during combat. The higher the number, the more likely they are to go first.</div>
-                <div>A character's Initiative Modifier is equal to their Vigilance. If there's an E next to a character's Initiative Modifier, that means they have an edge on their initiative checks.</div>
-                <br></br>
-                <div><b>Example</b></div>
-                <div><i>Spider-Man's Vigilance is 3, so his Initiative Modifier is +3 by default; however, Spider-Man also has a power called "Spider-Sense" that gives him an edge on initiative checks. So his Initiative modifier is +3 E</i></div>
-                <hr></hr>
-            </div>
-        );
-    }
+    const clickBody = (
+        <div>
+            <div>A character's <i>Initiative Modifier</i> helps determine when they can act during combat. The higher the number, the more likely they are to go first.</div>
+            <div>A character's Initiative Modifier is equal to their Vigilance. If there's an E next to a character's Initiative Modifier, that means they have an edge on their initiative checks.</div>
+            <br></br>
+            <div><b>Example</b></div>
+            <div><i>Spider-Man's Vigilance is 3, so his Initiative Modifier is +3 by default; however, Spider-Man also has a power called "Spider-Sense" that gives him an edge on initiative checks. So his Initiative modifier is +3 E</i></div>
+        </div>
+    );
 
 
-
-    return <h3 className="subtitle" onClick={handleClick}>Initiative Modifier<sup className="clickScript">i</sup>: +{initModifier} {initEdge}</h3>
+    return <h3><ClickRuleSplitTitle rule={[<text>Initiative Modifier</text>, <text>+{initModifier} {initEdge}</text>]} children={clickBody} titleClass={'subtitle'} /></h3>
 };
 
 export default InitModifier;

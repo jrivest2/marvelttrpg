@@ -177,13 +177,13 @@ function BasicActions() {
         <div>
             <p>Each character gets one standard action every turn. They can take that action at any point before, during, or after their movement action.</p>
             <p>Standard Actions:</p>
-            <ClickRule rule={"Attack"} children={attackOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Dodge"} children={dodgeOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Escape"} children={escapeStandardOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Grab"} children={grabOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Help"} children={helpOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Move"} children={moveStandardOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Use a Power"} children={usePowerOutput} classRule={"basic-actions-rule"} />
+            <ClickRule rule={"Attack"} children={attackOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Dodge"} children={dodgeOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Escape"} children={escapeStandardOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Grab"} children={grabOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Help"} children={helpOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Move"} children={moveStandardOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Use a Power"} children={usePowerOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
         </div>
     );
     const reactionsOutput = (
@@ -191,13 +191,13 @@ function BasicActions() {
             <p>Each character gets one reaction every turn, which they can use when something happens that could trigger a particular reaction.</p>
             <p>Many powers can be used with a reaction. In fact, some of them can <i>only</i> be used with a reaction. The triggers for these powers are listed in the power descriptions.</p>
             <p>Common Reactions (excluding specific powers):</p>
-            <ClickRule rule={"Escape"} children={escapeReactionOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Fastball Special"} children={fastballOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Help Teammate"} children={helpTeammateOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Interpose"} children={interposeOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Ram"} children={ramOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Release"} children={releaseOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Skulk"} children={skulkOutput} classRule={"basic-actions-rule"} />
+            <ClickRule rule={"Escape"} children={escapeReactionOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Fastball Special"} children={fastballOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Help Teammate"} children={helpTeammateOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Interpose"} children={interposeOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Ram"} children={ramOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Release"} children={releaseOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Skulk"} children={skulkOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
             <br></br>
             <p><i>Anyone can perform the reactions listed above.</i></p>
         </div>
@@ -208,25 +208,25 @@ function BasicActions() {
             <p>A character can take their standard action at any point before, during, or after their movement action.</p>
             <p>Some powers require a movement action to use. This is listed in the power's description.</p>
             <p>When a character moves, they can travel a distance up to their listed speed with that mode of movement. Every character automatically has running, jumping, swimming, and climbing as potential movement modes. Powers and traits can give them additional modes.</p>
-            <ClickRule rule={"Basic Speeds"} children={basicSpeedsOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Combining Modes"} children={combiningModesOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Gliding*"} children={glidingOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Swinglining*"} children={swingliningOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Teleporting*"} children={teleportingOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Lifting and Carrying"} children={liftingCarryingOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Sneaking/Hiding"} children={sneakingHidingOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Towing"} children={towingOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Terrain"} children={terrainOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={"Falling Prone"} children={fallingProneOutput} classRule={"basic-actions-rule"} />
+            <ClickRule rule={"Basic Speeds"} children={basicSpeedsOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Combining Modes"} children={combiningModesOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Gliding*"} children={glidingOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Swinglining*"} children={swingliningOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Teleporting*"} children={teleportingOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Lifting and Carrying"} children={liftingCarryingOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Sneaking/Hiding"} children={sneakingHidingOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Towing"} children={towingOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Terrain"} children={terrainOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={"Falling Prone"} children={fallingProneOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
         </div>
     );
     
     return (
         <div>
             <div className="subtitle"><b>Basic Actions</b></div>
-            <ClickRule rule={<b>Standard Actions</b>} children={standardActionsOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={<b>Reactions</b>} children={reactionsOutput} classRule={"basic-actions-rule"} />
-            <ClickRule rule={<b>Movement Actions</b>} children={movementOutput} classRule={"basic-actions-rule"} />
+            <ClickRule rule={<b>Standard Actions</b>} children={standardActionsOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={<b>Reactions</b>} children={reactionsOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
+            <ClickRule rule={<b>Movement Actions</b>} children={movementOutput} bodyClass={"basic-actions-rule"} titleClass={"basic-actions-title"} />
         </div>
     );
 }

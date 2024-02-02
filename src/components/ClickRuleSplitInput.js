@@ -1,16 +1,16 @@
 import { useState } from 'react';
 
-function ClickRule({rule, children, bodyClass, titleClass}) {
+function ClickRuleSplitInput({rule, children, bodyClass, titleClass}) {
     const [isClicked, setIsClicked] = useState(false)
     const handleClick = () => {
         if (isClicked) setIsClicked(false)
         else setIsClicked(true)
     }
 
-    const standardOutput = <div className={titleClass} onClick={handleClick}>{rule}<sup className='clickScript'>i</sup></div>
+    const standardOutput = <div><text className={titleClass} onClick={handleClick}>{rule[0]}<sup className='clickScript'>i</sup></text><text>: {rule[1]}</text></div>
     const clickedOutput = (
         <div>
-            <div className={titleClass} onClick={handleClick}>{rule}<sup className='clickScript'>i</sup></div>
+            <div><text className={titleClass} onClick={handleClick}>{rule[0]}<sup className='clickScript'>i</sup></text><text>: {rule[1]}</text></div>
             <hr />
             <div className={bodyClass}>
                 {children}
@@ -21,4 +21,4 @@ function ClickRule({rule, children, bodyClass, titleClass}) {
     return <div>{ isClicked ? clickedOutput : standardOutput }</div>
 }
 
-export default ClickRule;
+export default ClickRuleSplitInput;
